@@ -5,21 +5,21 @@ Below is a histogram of the sentences' WER.
 
 ![WER Histogram](werHist.png)
 
-The maxmatch program gave a result of an average WER of 49.62%, with the median WER being 42.59%. The closest WER rate to the mean by any individual sentence is 50%, achieved by 4 sentences. Here is one of these to display an expected result of the program:
+The maxmatch program gave a result of an average WER of 49.62%, with the median WER being 42.59%. The closest WER rate to the mean by any individual sentence is 50%, achieved by 4 sentences. Here is one of these sentences to display an expected result of the program:
 
 WER: 50.00%\
 REF: 衣服 上 的 血跡   與 謀殺案 案發       當天 報導 上 的 描述 一樣 。\
 HYP: 衣服 上 的 血  跡 與 謀   殺  案 案 發 當天 報導 上 的 描述 一樣 。\
 EVA:        S  I   S   S  I I I 
 
-We can see that the primary problem is the lack of words in the dictionary to match to, with many words being separated out into single characters, such as with 謀 殺 案 versus 飛逝. Punctuation and dictionary findings are properly dealt with. Through the 200 sentences, only 6 times did two unrelated words get tokenized together, all of which involve at least one of the words having just one symbol. Here is such an example:
+We can see that the primary problem is the lack of words in the dictionary to match to, with many words being separated out into single characters, such as with 謀 殺 案 versus 謀殺案. Punctuation and dictionary findings are properly dealt with. Through the 200 sentences, only 6 times did two unrelated words get tokenized together, all of which involve at least one of the words having just one symbol. Here is such an example:
 
 WER: 105.00%\
 REF: 和 許多 社會 主義 者   一樣 ， Pedro Sánchez                     在 Évole         項目 中 表示 西班牙 是 萬民   之 邦 。\
 HYP: 和 許多 社會    主義者 一樣 ， P     e       d r o S á n c h e z 在 É     v o l e 項目 中 表示 西班牙 是 萬  民 之 邦 。\
 EVA:         D  S        S     S       I I I I I I I I I I   S     I I I I               S  I 
 
-We can see that 主義者 was formed when the final 者 symbol is meant to be a separate token. However, this sentence also displays a larger issue that accounts for much of the WER through the data. The Latin character names tested on are not present within the training dictionaries, so each character within these names gets spaced out and causes large strings of errors within the tokenizing process. Here is the highest WER sentence, and the one with the seemingly most egregious case of name spacing:
+We can see that 主義者 was formed when the final 者 symbol is meant to be a separate token. However, this sentence also displays a larger issue that accounts for much of the WER through the data. The Latin character names tested on are not present within the training dictionaries, so each character within these names gets spaced out and causes large strings of errors within the tokenizing process, massively increasing the Levenshtein distance. Here is the highest WER sentence, and the one with the seemingly most egregious case of name spacing:
 
 WER: 252.63%\
 REF: Goffredo Petrassi                           的 兩 個 學生 、 Ennio Morricone                         以及 Bruno Nicolai                     在 聖塞西莉亞         音樂 學校 見面   了 。\
