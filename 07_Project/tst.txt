@@ -1,6 +1,6 @@
 "<Naa>"
-	"naa" neg SELECT:19
-;	"naa" plr SELECT:19
+	"naa" neg SELECT:21
+;	"naa" plr SELECT:21
 "<ɗum>"
 	"ɗum" prn p3 subj mfn
 "<modibbo>"
@@ -13,16 +13,16 @@
 "<Buuba>"
 	"Buuba" n ant
 "<ɗon>"
-	"ɗon" vaux SELECT:31
-;	"ɗon" adv SELECT:31
-;	"ɗon" loc SELECT:31
-;	"ɗon" int SELECT:31
+	"ɗon" vaux SELECT:36
+;	"ɗon" adv SELECT:36
+;	"ɗon" loc SELECT:36
+;	"ɗon" int SELECT:36
 "<waali>"
 	"waalugo" v sta
 	"waalugo" v pret
 "<naa>"
-	"naa" plr SELECT:22
-;	"naa" neg SELECT:22
+	"naa" plr SELECT:24
+;	"naa" neg SELECT:24
 "<.>"
 	"." sent
 
@@ -35,10 +35,10 @@
 "<on>"
 	"on" prn p2 pl subj obj
 "<haa>"
-	"haa" cnjsub SELECT:40
-;	"haa" SELECT:40
-;	"haa" pr SELECT:40
-;	"haa" v imp sg SELECT:40
+	"haa"
+	"haa" cnjsub
+	"haa" pr
+	"haa" v imp sg
 "<saare>"
 	"saare" n sg cl_nde
 "<Buuba>"
@@ -55,8 +55,8 @@
 "<peetel>"
 	"peetel" adj
 "<nde>"
-	"nde" cnjsub cl_nde SELECT:37
-;	"nde" prn p3 sg cl_nde SELECT:37
+	"nde" cnjsub cl_nde SELECT:51
+;	"nde" prn p3 sg cl_nde SELECT:51
 "<mi>"
 	"mi" prn p1 sg subj
 "<soodante>"
@@ -81,6 +81,7 @@
 
 
 "<Hande>"
+	"hande" adv
 	"Hande" n ant
 "<kuugal>"
 	"kuugal" n sg cl_ngal
@@ -108,10 +109,11 @@
 
 
 "<Hande>"
+	"hande" adv
 	"Hande" n ant
 "<ɗi>"
-	"ɗi" cnjsub cl_ɗi SELECT:37
-;	"ɗi" prn p3 pl SELECT:37
+	"ɗi" cnjsub cl_ɗi SELECT:51
+;	"ɗi" prn p3 pl SELECT:51
 "<majjaay>"
 	"*majjaay"
 "<hakkunde>"
@@ -159,8 +161,8 @@
 "<pukaraajo>"
 	"pukaraajo" n sg cl_o
 "<naa>"
-	"naa" plr SELECT:22
-;	"naa" neg SELECT:22
+	"naa" plr SELECT:24
+;	"naa" neg SELECT:24
 "<.>"
 	"." sent
 
@@ -174,5 +176,584 @@
 	"walaa" plr neg
 "<fayande>"
 	"fayande" n sg cl_nde
+"<.>"
+	"." sent
+
+
+
+"<Buuba>"
+	"Buuba" n ant
+"<wiʼino>"
+	"wiʼugo" v sta cntfct
+	"wiʼugo" v pret cntfct
+"<o>"
+	"o" cnjsub cl_o
+	"o" prn p3 sg subj mf
+"<yahataa>"
+	"yahugo" v pprs neg
+"<walde>"
+	"*walde"
+"<.>"
+	"." sent
+
+
+
+"<Onon>"
+	"onon" prn p2 pl emph
+"<defi>"
+	"defugo" v sta
+	"defugo" v pret
+"<ndu>"
+	"ndu" prn p3 sg cl_ndu
+;	"ndu" cnjsub cl_ndu REMOVE:66
+"<.>"
+	"." sent
+
+
+
+"<Mi>"
+	"mi" prn p1 sg subj
+"<yillaay>"
+	"yillugo" v pret neg
+"<soobaajo>"
+	"soobaajo" n sg cl_o
+"<am>"
+	"am" prn p1 sg obj
+	"am" prn pos p1 sg px1sg
+"<.>"
+	"." sent
+
+
+
+"<Saalihu>"
+	"Saalihu" np ant
+"<waɗataa>"
+	"waɗugo" v pprs neg
+"<tebur>"
+	"tebur" n sg cl_nga
+"<.>"
+	"." sent
+
+
+
+"<Ɗe>"
+	"ɗe" cnjsub cl_ɗe
+	"ɗe" prn p3 pl
+"<wooɗi>"
+	"wooɗugo" v sta
+	"wooɗugo" v pret
+"<naa>"
+	"naa" plr SELECT:24
+;	"naa" neg SELECT:24
+"<.>"
+	"." sent
+
+
+
+"<Rewɓe>"
+	"debbo" n pl cl_ɓe
+"<ɗon>"
+	"ɗon" vaux SELECT:36
+;	"ɗon" adv SELECT:36
+;	"ɗon" loc SELECT:36
+;	"ɗon" int SELECT:36
+"<wuuwi>"
+	"wuuw" v sta
+	"wuuw" v pret
+"<ciʼe>"
+	"saare" n pl cl_ɗe
+"<.>"
+	"." sent
+
+
+
+"<Hokkee>"
+	"hokkugo" v imp pl
+"<yam>"
+	"yam" prn p1 sg obj SELECT:54
+;	"yamugo" SELECT:54
+;	"ƴamugo" SELECT:54
+;	"yamugo" v imp sg SELECT:54
+;	"ƴamugo" v imp sg SELECT:54
+"<ceede>"
+	"ceede" n pl cl_ɗe
+"<.>"
+	"." sent
+
+
+
+"<Moy>"
+	"moy" prn itg
+"<wiʼi>"
+	"wiʼugo" v sta
+	"wiʼugo" v pret
+"<mo>"
+	"mo" prn p3 sg obj mf
+"<haalaaji>"
+	"haala" n pl cl_ɗi
+"<.>"
+	"." sent
+
+
+
+"<Kanko>"
+	"ko" prn p3 sg emph cl_ko
+	"kanko" prn p3 sg mf emph
+"<jaabi>"
+	"jaabugo" v sta
+	"jaabugo" v pret
+"<mo>"
+	"mo" prn p3 sg obj mf
+"<.>"
+	"." sent
+
+
+
+"<Ooho>"
+	"ooho" adv
+"<,>"
+	"," cm
+"<mi>"
+	"mi" prn p1 sg subj
+"<ɗon>"
+	"ɗon" vaux SELECT:36
+;	"ɗon" adv SELECT:36
+;	"ɗon" loc SELECT:36
+;	"ɗon" int SELECT:36
+"<nani>"
+	"nanugo" v sta
+	"nanugo" v pret
+"<nde>"
+	"nde" prn p3 sg cl_nde
+;	"nde" cnjsub cl_nde REMOVE:66
+"<.>"
+	"." sent
+
+
+
+"<O>"
+	"o" cnjsub cl_o
+	"o" prn p3 sg subj mf
+"<yiɗi>"
+	"yiɗugo" v sta
+	"yiɗugo" v pret
+"<nastugo>"
+	"nastugo" v inf
+"<jangirde>"
+	"jangirde" n sg cl_nde
+"<mawɓe>"
+	"mawnugo" adj cl_ɓe SELECT:72
+;	"mawɗo" n pl cl_ɓe SELECT:72
+"<.>"
+	"." sent
+
+
+
+"<Walaa>"
+	"walaa" plr neg
+"<naange>"
+	"naange" n sg cl_nge
+"<naa>"
+	"naa" plr SELECT:24
+;	"naa" neg SELECT:24
+"<.>"
+	"." sent
+
+
+
+"<Ɗum>"
+	"ɗum" prn p3 subj mfn
+"<koroowal>"
+	"koroowal" n sg cl_ngal
+"<moy>"
+	"moy" prn itg
+"<.>"
+	"." sent
+
+
+
+"<Woodi>"
+	"woodugo" v sta
+	"woodugo" v pret
+	"woodi" plr aff
+"<koroowal>"
+	"koroowal" n sg cl_ngal
+"<naa>"
+	"naa" neg
+	"naa" plr
+"<kadi>"
+	"kadi" cnjadv
+"<.>"
+	"." sent
+
+
+
+"<Usumaanu>"
+	"Usumaanu" n ant
+"<ɗon>"
+	"ɗon" adv
+	"ɗon" vaux
+	"ɗon" loc
+	"ɗon" int
+"<ton>"
+	"ton" adv
+"<.>"
+	"." sent
+
+
+
+"<Buuba>"
+	"Buuba" n ant
+"<ɗon>"
+	"ɗon" vaux SELECT:36
+;	"ɗon" adv SELECT:36
+;	"ɗon" loc SELECT:36
+;	"ɗon" int SELECT:36
+"<defi>"
+	"defugo" v sta
+	"defugo" v pret
+"<.>"
+	"." sent
+
+
+
+"<Luumo>"
+	"luumo" n sg cl_ngo
+"<nyaamataa>"
+	"nyaamugo" v pprs neg
+"<kiikiɗe>"
+	"kiikiɗe" n sg cl_nde
+"<.>"
+	"." sent
+
+
+
+"<En>"
+	"en" prn p1 pl incl subj obj
+"<fuh>"
+	"fuh" adv
+"<en>"
+	"en" prn p1 pl incl subj obj
+"<defataa>"
+	"defugo" v pprs neg
+"<baalte>"
+	"baalte" n sg cl_nde
+"<.>"
+	"." sent
+
+
+
+"<Ooho>"
+	"ooho" adv
+"<,>"
+	"," cm
+"<min>"
+	"min" prn p1 sg emph
+	"min" prn p1 pl excl subj obj
+"<woodi>"
+	"woodugo" v sta
+	"woodugo" v pret
+	"woodi" plr aff
+"<siwtaare>"
+	"siwtaare" n sg cl_nde
+"<hande>"
+	"hande" adv
+"<.>"
+	"." sent
+
+
+
+"<Ndaa>"
+	"ndaa" adv
+"<saare>"
+	"saare" n sg cl_nde
+"<gorko>"
+	"gorko" n sg cl_o
+"<Zeynabu>"
+	"Zeynabu" np ant
+"<.>"
+	"." sent
+
+
+
+"<Wakkati>"
+	"wakkati" n sg cl_nde
+"<ndey>"
+	"ndey" prn itg
+"<ɓe>"
+	"ɓe" cnjsub cl_ɓe
+	"ɓe" prn p3 pl subj obj mf
+"<jarribata>"
+	"jarribugo" v fut rel
+"<fukaraaɓe>"
+	"pukaraajo" n pl cl_ɓe
+"<haa>"
+	"haa" cnjsub SELECT:51
+;	"haa" SELECT:51
+;	"haa" pr SELECT:51
+;	"haa" v imp sg SELECT:51
+"<jangirde>"
+	"jangirde" n sg cl_nde
+"<nde>"
+	"nde" cnjsub cl_nde SELECT:51
+;	"nde" prn p3 sg cl_nde SELECT:51
+"<.>"
+	"." sent
+
+
+
+"<O>"
+	"o" cnjsub cl_o
+	"o" prn p3 sg subj mf
+"<ɗon>"
+	"ɗon" vaux SELECT:36
+;	"ɗon" adv SELECT:36
+;	"ɗon" loc SELECT:36
+;	"ɗon" int SELECT:36
+"<roondi>"
+	"roondugo" v sta
+	"roondugo" v pret
+"<mbulku>"
+	"mbulku" n sg cl_ngu
+"<.>"
+	"." sent
+
+
+
+"<Aaʼi>"
+	"Aaʼi" np ant
+"<ɗon>"
+	"ɗon" vaux SELECT:36
+;	"ɗon" adv SELECT:36
+;	"ɗon" loc SELECT:36
+;	"ɗon" int SELECT:36
+"<maɓɓi>"
+	"maɓɓugo" v sta
+	"maɓɓugo" v pret
+"<dammugal>"
+	"dammugal" n sg cl_ngal
+"<.>"
+	"." sent
+
+
+
+"<Ɗum>"
+	"ɗum" prn p3 subj mfn
+"<mbeewa>"
+	"mbeewa" n sg cl_nga
+"<Abdullaahi>"
+	"Abdullaahi" np ant
+"<naa>"
+	"naa" plr SELECT:24
+;	"naa" neg SELECT:24
+"<.>"
+	"." sent
+
+
+
+"<Fukaraaɓe>"
+	"pukaraajo" n pl cl_ɓe
+"<ɗon>"
+	"ɗon" vaux SELECT:36
+;	"ɗon" adv SELECT:36
+;	"ɗon" loc SELECT:36
+;	"ɗon" int SELECT:36
+"<windi>"
+	"windugo" v sta
+	"windugo" v pret
+"<.>"
+	"." sent
+
+
+
+"<Ɗum>"
+	"ɗum" prn p3 subj mfn
+"<debbo>"
+	"debbo" n sg cl_o
+"<.>"
+	"." sent
+
+
+
+"<Ndey>"
+	"ndey" prn itg
+"<wakkati>"
+	"wakkati" n sg cl_nde
+"<fuɗɗugo>"
+	"fuɗɗugo" v inf
+"<kuugal>"
+	"kuugal" n sg cl_ngal
+"<.>"
+	"." sent
+
+
+
+"<Aaʼa>"
+	"aaʼa" adv
+"<,>"
+	"," cm
+"<nde>"
+	"nde" prn p3 sg cl_nde SELECT:63
+;	"nde" cnjsub cl_nde SELECT:63
+"<peetel>"
+	"peetel" adj
+"<.>"
+	"." sent
+
+
+
+"<Mi>"
+	"mi" prn p1 sg subj
+"<yiɗi>"
+	"yiɗugo" v sta
+	"yiɗugo" v pret
+"<leddi>"
+	"leddi" n sg cl_ndi
+"<mboonndi>"
+	"*mboonndi"
+"<ndi>"
+	"ndi" prn p3 sg cl_ndi
+;	"ndi" cnjsub cl_ndi REMOVE:66
+"<.>"
+	"." sent
+
+
+
+"<O>"
+	"o" cnjsub cl_o
+	"o" prn p3 sg subj mf
+"<heɓi>"
+	"heɓugo" v sta
+	"heɓugo" v pret
+"<mbulku>"
+	"mbulku" n sg cl_ngu
+"<boonngu>"
+	"*boonngu"
+"<.>"
+	"." sent
+
+
+
+"<Hoore>"
+	"hoore" n sg cl_nde
+"<am>"
+	"am" prn p1 sg obj
+	"am" prn pos p1 sg px1sg
+"<ɗon>"
+	"ɗon" vaux SELECT:36
+;	"ɗon" adv SELECT:36
+;	"ɗon" loc SELECT:36
+;	"ɗon" int SELECT:36
+"<naawi>"
+	"naawugo" v sta
+	"naawugo" v pret
+"<.>"
+	"." sent
+
+
+
+"<Ɓiɓɓe>"
+	"biɗɗo" n pl cl_ɓe
+"<maa>"
+	"maa" cnjcoo
+	"maa" prn p2 sg obj
+	"maa" prn pos p2 sg
+"<joweegoʼo>"
+	"joweego" num
+"<.>"
+	"." sent
+
+
+
+"<Ɗum>"
+	"ɗum" prn p3 subj mfn
+"<loonde>"
+	"loonde" n sg cl_nde
+"<naa>"
+	"naa" neg
+	"naa" plr
+"<maa>"
+	"maa" cnjcoo
+	"maa" prn p2 sg obj
+	"maa" prn pos p2 sg
+"<boo>"
+	"boo"
+"<looɗe>"
+	"loonde" n pl cl_ɗe
+"<.>"
+	"." sent
+
+
+
+"<Mbaala>"
+	"mbaala" n sg cl_nga
+"<on>"
+	"on" prn p2 pl subj obj
+"<les>"
+	"les" pr loc
+"<ɓokki>"
+	"ɓokki" n sg cl_ki
+"<man>"
+	"man" prn
+"<.>"
+	"." sent
+
+
+
+"<Nagge>"
+	"nagge" n sg cl_nge
+"<Giɗaaɗo>"
+	"*Giɗaaɗo"
+"<ɗon>"
+	"ɗon" loc SELECT:42
+;	"ɗon" adv SELECT:42
+;	"ɗon" vaux SELECT:42
+;	"ɗon" int SELECT:42
+"<haa>"
+	"haa" pr SELECT:45
+;	"haa" SELECT:45
+;	"haa" cnjsub SELECT:45
+;	"haa" v imp sg SELECT:45
+"<waalde>"
+	"waalde" n sg cl_nde
+"<.>"
+	"." sent
+
+
+
+"<A>"
+	"a" prn p2 sg subj
+"<yiidi>"
+	"yiidugo" v sta
+	"yiidugo" v pret
+"<bee>"
+	"bee" pr
+"<esiraawo>"
+	"esiraawo" n sg cl_o
+"<am>"
+	"am" prn p1 sg obj
+	"am" prn pos p1 sg px1sg
+"<naa>"
+	"naa" plr SELECT:24
+;	"naa" neg SELECT:24
+"<.>"
+	"." sent
+
+
+
+"<O>"
+	"o" cnjsub cl_o
+	"o" prn p3 sg subj mf
+"<nanaay>"
+	"nanugo" v pret neg
+"<habaru>"
+	"habaru" n sg cl_ndu
+"<haa>"
+	"haa" cnjsub SELECT:51
+;	"haa" SELECT:51
+;	"haa" pr SELECT:51
+;	"haa" v imp sg SELECT:51
+"<jooni>"
+	"jooni" adv
 "<.>"
 	"." sent

@@ -1,42 +1,20 @@
 Tokens:
 
-
-Errors:
-
-7 | "waalugo" v pret | {'"waalugo" v sta': True, '"waalugo" v pret': False}
-13 | "haa" pr | {'"haa" cnjsub': False, '"haa" pr': True, '"haa" v imp sg': False}
-25 | "wiʼugo" v pret | {'"wiʼugo" v sta': True, '"wiʼugo" v pret': False, ';\t"wiʼugo" v pret': True}
-31 | "ɗuuɗugo" v sta | {'"ɗuuɗugo" v sta': False, '"ɗuuɗugo" v pret': True, ';\t"ɗuuɗugo" v sta': True}
-48 | "waɗugo" v sta | {'"waɗugo" v sta': False, '"waɗugo" v pret': True, ';\t"waɗugo" v sta': True}
-
-Decisions:
-
-		TP	FP	TN	FN
-SELECT:19 	1	0	0	0
-SELECT:31 	3	0	0	0
-SELECT:22 	2	0	0	0
-SELECT:40 	1	1	0	0
-SELECT:37 	2	0	0	0
-
---------------------------------------------------------------------------------
-Input analyses: 77
-Reference analyses: 75
-Output analyses: 67
-
-Input ambiguity: 1.1846153846153846
-Reference ambiguity: 1.1538461538461537
-Output ambiguity: 1.0307692307692307
-
-False positives: 1
-False negatives: 4
-True positives: 9
-True negatives: 56
-
-Precision: 0.9
-Recall: 0.6923076923076923
-F1: 0.7826
-
- ('Buuba', {'"Buuba" n ant': True})
+1 | ('Naa', {'"naa" neg': False, '"naa" plr': False, '"naa" neg SELECT:21': True, ';\t"naa" plr SELECT:21': True})
+2 | ('ɗum', {'"ɗum" prn p3 subj mfn': True})
+3 | ('modibbo', {'"modibbo" n sg cl_o': True})
+4 | ('.', {'"." sent': True})
+5 | ('Buuba', {'"Buuba" n ant': True})
+6 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': False, '"ɗon" loc': False, '"ɗon" int': False, '"ɗon" vaux SELECT:33': True, ';\t"ɗon" adv SELECT:33': True, ';\t"ɗon" loc SELECT:33': True, ';\t"ɗon" int SELECT:33': True})
+7 | ('waali', {'"waalugo" v sta': True, '"waalugo" v pret': False})
+8 | ('naa', {'"naa" neg': False, '"naa" plr': False, '"naa" plr SELECT:24': True, ';\t"naa" neg SELECT:24': True})
+9 | ('.', {'"." sent': True})
+10 | ('Ɗum', {'"ɗum" prn p3 subj mfn': True})
+11 | ('ɗume', {'"ɗume" prn itg': True})
+12 | ('on', {'"on" prn p2 pl subj obj': True, ';\t"on" emph': True})
+13 | ('haa', {'"haa" cnjsub': False, '"haa" pr': True, '"haa" v imp sg': False})
+14 | ('saare', {'"saare" n sg cl_nde': True})
+15 | ('Buuba', {'"Buuba" n ant': True})
 16 | ('.', {'"." sent': True})
 17 | ('Ndaa', {'"ndaa" adv': True})
 18 | ('deftere', {'"deftere" n sg cl_nde': True})
@@ -50,7 +28,7 @@ F1: 0.7826
 26 | ('mo', {'"mo" prn p3 sg obj mf': True})
 27 | ('haalaaji', {'"haala" n pl cl_ɗi': True})
 28 | ('.', {'"." sent': True})
-29 | ('Hande', {'"Hande" n ant': True})
+29 | ('Hande', {'"hande" adv': False, '"Hande" n ant': True})
 30 | ('kuugal', {'"kuugal" n sg cl_ngal': True})
 31 | ('ɗuuɗi', {'"ɗuuɗugo" v sta': False, '"ɗuuɗugo" v pret': True, ';\t"ɗuuɗugo" v sta': True})
 32 | ('.', {'"." sent': True})
@@ -60,7 +38,7 @@ F1: 0.7826
 36 | ('yiɗaa', {'"yiɗugo" v pret neg': True})
 37 | ('gawri', {'"gawri" n sg cl_ndi': True})
 38 | ('.', {'"." sent': True})
-39 | ('Hande', {'"Hande" n ant': True})
+39 | ('Hande', {'"hande" adv': False, '"Hande" n ant': True})
 40 | ('ɗi', {'"ɗi" cnjsub cl_ɗi': True, '"ɗi" prn p3 pl': False, ';\t"ɗi" prn p3 pl': True})
 41 | ('majjaay', {})
 42 | ('hakkunde', {})
@@ -87,3 +65,286 @@ F1: 0.7826
 63 | ('walaa', {'"walaa" plr neg': True})
 64 | ('fayande', {'"fayande" n sg cl_nde': True})
 65 | ('.', {'"." sent': True})
+66 | ('Buuba', {'"Buuba" n ant': True})
+67 | ('wiʼino', {'"wiʼugo" v sta cntfct': False, '"wiʼugo" v pret cntfct': True, ';\t"wiʼugo" v sta cntfct': True})
+68 | ('o', {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': True, ';\t"o" cnjsub cl_o': True})
+69 | ('yahataa', {'"yahugo" v pprs neg': True})
+70 | ('walde', {})
+71 | ('.', {'"." sent': True})
+72 | ('Onon', {'"onon" prn p2 pl emph': True})
+73 | ('defi', {'"defugo" v sta': True, '"defugo" v pret': False, ';\t"defugo" v pret': True})
+74 | ('ndu', {'"ndu" cnjsub cl_ndu': False, '"ndu" prn p3 sg cl_ndu': True, ';\t"ndu" cnjsub cl_ndu': True})
+75 | ('.', {'"." sent': True})
+76 | ('Mi', {'"mi" prn p1 sg subj': True})
+77 | ('yillaay', {'"yillugo" v pret neg': True})
+78 | ('soobaajo', {'"soobaajo" n sg cl_o': True})
+79 | ('am', {'"am" prn p1 sg obj': False, '"am" prn pos p1 sg px1sg': True, ';\t"am" prn p1 sg obj': True})
+80 | ('.', {'"." sent': True})
+81 | ('Saalihu', {'"Saalihu" np ant': True})
+82 | ('waɗataa', {'"waɗugo" v pprs neg': True})
+83 | ('tebur', {'"tebur" n sg cl_nga': True})
+84 | ('.', {'"." sent': True})
+85 | ('Ɗe', {'"ɗe" cnjsub cl_ɗe': False, '"ɗe" prn p3 pl': True, ';\t"ɗe" cnjsub cl_ɗe': True})
+86 | ('wooɗi', {'"wooɗugo" v sta': False, '"wooɗugo" v pret': True, ';\t"wooɗugo" v sta': True})
+87 | ('naa', {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True})
+88 | ('.', {'"." sent': True})
+89 | ('Rewɓe', {'"debbo" n pl cl_ɓe': True})
+90 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': True, '"ɗon" loc': False, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" loc': True, ';\t"ɗon" int': True})
+91 | ('wuuwi', {'"wuuw" v sta': True, '"wuuw" v pret': False, ';\t"wuuw" v pret': True})
+92 | ('ciʼe', {'"saare" n pl cl_ɗe': True})
+93 | ('.', {'"." sent': True})
+94 | ('Hokkee', {'"hokkugo" v imp pl': True})
+95 | ('yam', {'"yam" prn p1 sg obj': True, '"yamugo" v imp sg': False, '"ƴamugo" v imp sg': False, ';\t"yamugo" v imp sg': True, ';\t"ƴamugo" v imp sg': True})
+96 | ('ceede', {'"ceede" n pl cl_ɗe': True})
+97 | ('.', {'"." sent': True})
+98 | ('Moy', {'"moy" prn itg': True})
+99 | ('wiʼi', {'"wiʼugo" v sta': False, '"wiʼugo" v pret': True, ';\t"wiʼugo" v sta': True})
+100 | ('mo', {'"mo" prn p3 sg obj mf': True})
+101 | ('haalaaji', {'"haala" n pl cl_ɗi': True})
+102 | ('.', {'"." sent': True})
+103 | ('Kanko', {'"ko" prn p3 sg emph cl_ko': True, '"kanko" prn p3 sg mf emph': False, ';\t"kanko" prn p3 sg mf emph': True})
+104 | ('jaabi', {'"jaabugo" v sta': False, '"jaabugo" v pret': True, ';\t"jaabugo" v sta': True})
+105 | ('mo', {'"mo" prn p3 sg obj mf': True})
+106 | ('.', {'"." sent': True})
+107 | ('Ooho', {'"ooho" adv': True})
+108 | (',', {'"," cm': True})
+109 | ('mi', {'"mi" prn p1 sg subj': True})
+110 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': True, '"ɗon" loc': False, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" loc': True, ';\t"ɗon" int': True})
+111 | ('nani', {'"nanugo" v sta': False, '"nanugo" v pret': False, '"nanugo" v pprs': True, ';\t"nanugo" v sub': True})
+112 | ('nde', {'"nde" cnjsub cl_nde': False, '"nde" prn p3 sg cl_nde': True, ';\t"nde" cnjsub cl_nde': True})
+113 | ('.', {'"." sent': True})
+114 | ('O', {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': True, ';\t"o" cnjsub cl_o': True})
+115 | ('yiɗi', {'"yiɗugo" v sta': False, '"yiɗugo" v pret': True, ';\t"yiɗugo" v sta': True})
+116 | ('nastugo', {'"nastugo" v inf': True})
+117 | ('jangirde', {'"jangirde" n sg cl_nde': True})
+118 | ('mawɓe', {'"mawɗo" n pl cl_ɓe': False, '"mawnugo" adj cl_ɓe': True, ';\t"mawɗo" n pl cl_ɓe': True})
+119 | ('.', {'"." sent': True})
+120 | ('Walaa', {'"walaa" plr neg': True})
+121 | ('naange', {'"naange" n sg cl_nge': True})
+122 | ('naa', {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True})
+123 | ('.', {'"." sent': True})
+124 | ('Ɗum', {'"ɗum" prn p3 subj mfn': True})
+125 | ('koroowal', {'"koroowal" n sg cl_ngal': True})
+126 | ('moy', {'"moy" prn itg': True})
+127 | ('.', {'"." sent': True})
+128 | ('Woodi', {'"woodugo" v sta': False, '"woodugo" v pret': False, '"woodi" plr aff': True, ';\t"woodugo" v sta': True, ';\t"woodugo" v pret': True})
+129 | ('koroowal', {'"koroowal" n sg cl_ngal': True})
+130 | ('naa', {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True})
+131 | ('kadi', {'"kadi" cnjadv': True})
+132 | ('.', {'"." sent': True})
+133 | ('Usumaanu', {'"Usumaanu" n ant': True})
+134 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': False, '"ɗon" loc': True, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" vaux': True, ';\t"ɗon" int': True})
+135 | ('ton', {'"ton" adv': True})
+136 | ('.', {'"." sent': True})
+137 | ('Buuba', {'"Buuba" n ant': True})
+138 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': True, '"ɗon" loc': False, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" loc': True, ';\t"ɗon" int': True})
+139 | ('defi', {'"defugo" v sta': True, '"defugo" v pret': False, ';\t"defugo" v pret': True})
+140 | ('.', {'"." sent': True})
+141 | ('Luumo', {'"luumo" n sg cl_ngo': True})
+142 | ('nyaamataa', {'"nyaamugo" v pprs neg': True})
+143 | ('kiikiɗe', {'"kiikiɗe" n sg cl_nde': True})
+144 | ('.', {'"." sent': True})
+145 | ('En', {'"en" prn p1 pl incl subj obj': True})
+146 | ('fuh', {'"fuh" adv': True})
+147 | ('en', {'"en" prn p1 pl incl subj obj': True})
+148 | ('defataa', {'"defugo" v pprs neg': True})
+149 | ('baalte', {'"baalte" n sg cl_nde': True})
+150 | ('.', {'"." sent': True})
+151 | ('Ooho', {'"ooho" adv': True})
+152 | (',', {'"," cm': True})
+153 | ('min', {'"min" prn p1 sg emph': False, '"min" prn p1 pl excl subj obj': True, ';\t"min" prn p1 sg emph': True})
+154 | ('woodi', {'"woodugo" v sta': False, '"woodugo" v pret': True, '"woodi" plr aff': False, ';\t"woodugo" v sta': True, ';\t"woodi" plr aff': True})
+155 | ('siwtaare', {'"siwtaare" n sg cl_nde': True})
+156 | ('hande', {'"hande" adv': True})
+157 | ('.', {'"." sent': True})
+158 | ('Ndaa', {'"ndaa" adv': True})
+159 | ('saare', {'"saare" n sg cl_nde': True})
+160 | ('gorko', {'"gorko" n sg cl_o': True})
+161 | ('Zeynabu', {'"Zeynabu" np ant': True})
+162 | ('.', {'"." sent': True})
+163 | ('Wakkati', {'"wakkati" n sg cl_nde': True})
+164 | ('ndey', {'"ndey" prn itg': True})
+165 | ('ɓe', {'"ɓe" cnjsub cl_ɓe': False, '"ɓe" prn p3 pl subj obj mf': True, ';\t"ɓe" cnjsub cl_ɓe': True})
+166 | ('jarribata', {'"jarribugo" v fut rel': True})
+167 | ('fukaraaɓe', {'"pukaraajo" n pl cl_ɓe': True})
+168 | ('haa', {'"haa" cnjsub': False, '"haa" pr': True, '"haa" v imp sg': False, ';\t"haa" cnjsub': True, ';\t"haa" v imp sg': True})
+169 | ('jangirde', {'"jangirde" n sg cl_nde': True})
+170 | ('nde', {'"nde" cnjsub cl_nde': False, '"nde" prn p3 sg cl_nde': True, ';\t"nde" cnjsub cl_nde': True})
+171 | ('.', {'"." sent': True})
+172 | ('O', {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': True, ';\t"o" cnjsub cl_o': True})
+173 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': True, '"ɗon" loc': False, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" loc': True, ';\t"ɗon" int': True})
+174 | ('roondi', {'"roondugo" v sta': False, '"roondugo" v pret': True, ';\t"roondugo" v sta': True})
+175 | ('mbulku', {'"mbulku" n sg cl_ngu': True})
+176 | ('.', {'"." sent': True})
+177 | ('Aaʼi', {'"Aaʼi" np ant': True})
+178 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': True, '"ɗon" loc': False, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" loc': True, ';\t"ɗon" int': True})
+179 | ('maɓɓi', {'"maɓɓugo" v sta': True, '"maɓɓugo" v pret': False, ';\t"maɓɓugo" v pret': True})
+180 | ('dammugal', {'"dammugal" n sg cl_ngal': True})
+181 | ('.', {'"." sent': True})
+182 | ('Ɗum', {'"ɗum" prn p3 subj mfn': True})
+183 | ('mbeewa', {'"mbeewa" n sg cl_nga': True})
+184 | ('Abdullaahi', {'"Abdullaahi" np ant': False})
+185 | ('naa', {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True})
+186 | ('.', {'"." sent': True})
+187 | ('Fukaraaɓe', {'"pukaraajo" n pl cl_ɓe': True})
+188 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': True, '"ɗon" loc': False, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" loc': True, ';\t"ɗon" int': True})
+189 | ('windi', {'"windugo" v sta': True, '"windugo" v pret': False, ';\t"windugo" v pret': True})
+190 | ('.', {'"." sent': True})
+191 | ('Ɗum', {'"ɗum" prn p3 subj mfn': True})
+192 | ('debbo', {'"debbo" n sg cl_o': True})
+193 | ('.', {'"." sent': True})
+194 | ('Ndey', {'"ndey" prn itg': True})
+195 | ('wakkati', {'"wakkati" n sg cl_nde': True})
+196 | ('fuɗɗugo', {'"fuɗɗugo" v inf': True})
+197 | ('kuugal', {'"kuugal" n sg cl_ngal': True})
+198 | ('.', {'"." sent': True})
+199 | ('Aaʼa', {'"aaʼa" adv': True})
+200 | (',', {'"," cm': True})
+201 | ('nde', {'"nde" cnjsub cl_nde': False, '"nde" prn p3 sg cl_nde': True, ';\t"nde" cnjsub cl_nde': True})
+202 | ('peetel', {'"peetel" adj': True})
+203 | ('.', {'"." sent': True})
+204 | ('Mi', {'"mi" prn p1 sg subj': True})
+205 | ('yiɗi', {'"yiɗugo" v sta': False, '"yiɗugo" v pret': True, ';\t"yiɗugo" v sta': True})
+206 | ('leddi', {'"leddi" n sg cl_ndi': True})
+207 | ('mboonndi', {})
+208 | ('ndi', {'"ndi" cnjsub cl_ndi': False, '"ndi" prn p3 sg cl_ndi': True, ';\t"ndi" cnjsub cl_ndi': True})
+209 | ('.', {'"." sent': True})
+210 | ('O', {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': True, ';\t"o" cnjsub cl_o': True})
+211 | ('heɓi', {'"heɓugo" v sta': False, '"heɓugo" v pret': True, ';\t"heɓugo" v sta': True})
+212 | ('mbulku', {'"mbulku" n sg cl_ngu': True})
+213 | ('boonngu', {})
+214 | ('.', {'"." sent': True})
+215 | ('Hoore', {'"hoore" n sg cl_nde': True})
+216 | ('am', {'"am" prn p1 sg obj': True, '"am" prn pos p1 sg px1sg': False, ';\t"am" prn pos p1 sg px1sg': True})
+217 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': True, '"ɗon" loc': False, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" loc': True, ';\t"ɗon" int': True})
+218 | ('naawi', {'"naawugo" v sta': True, '"naawugo" v pret': False, ';\t"naawugo" v pret': True})
+219 | ('.', {'"." sent': True})
+220 | ('Ɓiɓɓe', {'"biɗɗo" n pl cl_ɓe': True})
+221 | ('maa', {'"maa" cnjcoo': False, '"maa" prn p2 sg obj': True, '"maa" prn pos p2 sg': False, ';\t"maa" prn pos p2 sg': True})
+222 | ('joweegoʼo', {'"joweego" num': True})
+223 | ('.', {'"." sent': True})
+224 | ('Ɗum', {'"ɗum" prn p3 subj mfn': True})
+225 | ('loonde', {'"loonde" n sg cl_nde': True})
+226 | ('naa', {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True})
+227 | ('maa', {'"maa" cnjcoo': True, '"maa" prn p2 sg obj': False, '"maa" prn pos p2 sg': False, ';\t"maa" prn p2 sg obj': True, ';\t"maa" prn pos p2 sg': True})
+228 | ('boo', {})
+229 | ('looɗe', {'"loonde" n pl cl_ɗe': True})
+230 | ('.', {'"." sent': True})
+231 | ('Mbaala', {'"mbaala" n sg cl_nga': True})
+232 | ('on', {'"on" prn p2 pl subj obj': True})
+233 | ('les', {'"les" pr loc': True})
+234 | ('ɓokki', {'"ɓokki" n sg cl_ki': True})
+235 | ('man', {'"man" prn': True})
+236 | ('.', {'"." sent': True})
+237 | ('Nagge', {'"nagge" n sg cl_nge': True})
+238 | ('Giɗaaɗo', {})
+239 | ('ɗon', {'"ɗon" adv': False, '"ɗon" vaux': False, '"ɗon" loc': True, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" vaux': True, ';\t"ɗon" int': True})
+240 | ('haa', {'"haa" cnjsub': False, '"haa" pr': True, '"haa" v imp sg': False, ';\t"haa" cnjsub': True, ';\t"haa" v imp sg': True})
+241 | ('waalde', {'"waalde" n sg cl_nde': True})
+242 | ('.', {'"." sent': True})
+243 | ('A', {'"a" prn p2 sg subj': True})
+244 | ('yiidi', {'"yiidugo" v sta': False, '"yiidugo" v pret': True, ';\t"yiidugo" v sta': True})
+245 | ('bee', {'"bee" pr': True})
+246 | ('esiraawo', {'"esiraawo" n sg cl_o': True})
+247 | ('am', {'"am" prn p1 sg obj': False, '"am" prn pos p1 sg px1sg': True, ';\t"am" prn p1 sg obj': True})
+248 | ('naa', {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True})
+249 | ('.', {'"." sent': True})
+250 | ('O', {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': False})
+251 | ('nanaay', {'"nanugo" v pret neg': False})
+252 | ('habaru', {'"habaru" n sg cl_ndu': False})
+253 | ('haa', {'"haa" cnjsub': False, '"haa" pr': False, '"haa" v imp sg': False})
+254 | ('jooni', {'"jooni" adv': False})
+255 | ('.', {'"." sent': False})
+
+Errors:
+
+7 | "waalugo" v pret | {'"waalugo" v sta': True, '"waalugo" v pret': False}
+13 | "haa" cnjsub | {'"haa" cnjsub': False, '"haa" pr': True, '"haa" v imp sg': False}
+13 | "haa" v imp sg | {'"haa" cnjsub': False, '"haa" pr': True, '"haa" v imp sg': False}
+25 | "wiʼugo" v pret | {'"wiʼugo" v sta': True, '"wiʼugo" v pret': False, ';\t"wiʼugo" v pret': True}
+29 | "hande" adv | {'"hande" adv': False, '"Hande" n ant': True}
+31 | "ɗuuɗugo" v sta | {'"ɗuuɗugo" v sta': False, '"ɗuuɗugo" v pret': True, ';\t"ɗuuɗugo" v sta': True}
+39 | "hande" adv | {'"hande" adv': False, '"Hande" n ant': True}
+48 | "waɗugo" v sta | {'"waɗugo" v sta': False, '"waɗugo" v pret': True, ';\t"waɗugo" v sta': True}
+67 | "wiʼugo" v sta cntfct | {'"wiʼugo" v sta cntfct': False, '"wiʼugo" v pret cntfct': True, ';\t"wiʼugo" v sta cntfct': True}
+68 | "o" cnjsub cl_o | {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': True, ';\t"o" cnjsub cl_o': True}
+73 | "defugo" v pret | {'"defugo" v sta': True, '"defugo" v pret': False, ';\t"defugo" v pret': True}
+79 | "am" prn p1 sg obj | {'"am" prn p1 sg obj': False, '"am" prn pos p1 sg px1sg': True, ';\t"am" prn p1 sg obj': True}
+85 | "ɗe" cnjsub cl_ɗe | {'"ɗe" cnjsub cl_ɗe': False, '"ɗe" prn p3 pl': True, ';\t"ɗe" cnjsub cl_ɗe': True}
+86 | "wooɗugo" v sta | {'"wooɗugo" v sta': False, '"wooɗugo" v pret': True, ';\t"wooɗugo" v sta': True}
+91 | "wuuw" v pret | {'"wuuw" v sta': True, '"wuuw" v pret': False, ';\t"wuuw" v pret': True}
+99 | "wiʼugo" v sta | {'"wiʼugo" v sta': False, '"wiʼugo" v pret': True, ';\t"wiʼugo" v sta': True}
+103 | "kanko" prn p3 sg mf emph | {'"ko" prn p3 sg emph cl_ko': True, '"kanko" prn p3 sg mf emph': False, ';\t"kanko" prn p3 sg mf emph': True}
+104 | "jaabugo" v sta | {'"jaabugo" v sta': False, '"jaabugo" v pret': True, ';\t"jaabugo" v sta': True}
+111 | "nanugo" v sta | {'"nanugo" v sta': False, '"nanugo" v pret': False, '"nanugo" v pprs': True, ';\t"nanugo" v sub': True}
+111 | "nanugo" v pret | {'"nanugo" v sta': False, '"nanugo" v pret': False, '"nanugo" v pprs': True, ';\t"nanugo" v sub': True}
+114 | "o" cnjsub cl_o | {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': True, ';\t"o" cnjsub cl_o': True}
+115 | "yiɗugo" v sta | {'"yiɗugo" v sta': False, '"yiɗugo" v pret': True, ';\t"yiɗugo" v sta': True}
+128 | "woodugo" v sta | {'"woodugo" v sta': False, '"woodugo" v pret': False, '"woodi" plr aff': True, ';\t"woodugo" v sta': True, ';\t"woodugo" v pret': True}
+128 | "woodugo" v pret | {'"woodugo" v sta': False, '"woodugo" v pret': False, '"woodi" plr aff': True, ';\t"woodugo" v sta': True, ';\t"woodugo" v pret': True}
+130 | "naa" neg | {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True}
+134 | "ɗon" adv | {'"ɗon" adv': False, '"ɗon" vaux': False, '"ɗon" loc': True, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" vaux': True, ';\t"ɗon" int': True}
+134 | "ɗon" vaux | {'"ɗon" adv': False, '"ɗon" vaux': False, '"ɗon" loc': True, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" vaux': True, ';\t"ɗon" int': True}
+134 | "ɗon" int | {'"ɗon" adv': False, '"ɗon" vaux': False, '"ɗon" loc': True, '"ɗon" int': False, ';\t"ɗon" adv': True, ';\t"ɗon" vaux': True, ';\t"ɗon" int': True}
+139 | "defugo" v pret | {'"defugo" v sta': True, '"defugo" v pret': False, ';\t"defugo" v pret': True}
+153 | "min" prn p1 sg emph | {'"min" prn p1 sg emph': False, '"min" prn p1 pl excl subj obj': True, ';\t"min" prn p1 sg emph': True}
+154 | "woodugo" v sta | {'"woodugo" v sta': False, '"woodugo" v pret': True, '"woodi" plr aff': False, ';\t"woodugo" v sta': True, ';\t"woodi" plr aff': True}
+154 | "woodi" plr aff | {'"woodugo" v sta': False, '"woodugo" v pret': True, '"woodi" plr aff': False, ';\t"woodugo" v sta': True, ';\t"woodi" plr aff': True}
+165 | "ɓe" cnjsub cl_ɓe | {'"ɓe" cnjsub cl_ɓe': False, '"ɓe" prn p3 pl subj obj mf': True, ';\t"ɓe" cnjsub cl_ɓe': True}
+168 | "haa" pr | {'"haa" cnjsub': False, '"haa" pr': True, '"haa" v imp sg': False, ';\t"haa" cnjsub': True, ';\t"haa" v imp sg': True}
+170 | "nde" prn p3 sg cl_nde | {'"nde" cnjsub cl_nde': False, '"nde" prn p3 sg cl_nde': True, ';\t"nde" cnjsub cl_nde': True}
+172 | "o" cnjsub cl_o | {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': True, ';\t"o" cnjsub cl_o': True}
+174 | "roondugo" v sta | {'"roondugo" v sta': False, '"roondugo" v pret': True, ';\t"roondugo" v sta': True}
+179 | "maɓɓugo" v pret | {'"maɓɓugo" v sta': True, '"maɓɓugo" v pret': False, ';\t"maɓɓugo" v pret': True}
+184 | "Abdullaahi" np ant | {'"Abdullaahi" np ant': False}
+189 | "windugo" v pret | {'"windugo" v sta': True, '"windugo" v pret': False, ';\t"windugo" v pret': True}
+205 | "yiɗugo" v sta | {'"yiɗugo" v sta': False, '"yiɗugo" v pret': True, ';\t"yiɗugo" v sta': True}
+210 | "o" cnjsub cl_o | {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': True, ';\t"o" cnjsub cl_o': True}
+211 | "heɓugo" v sta | {'"heɓugo" v sta': False, '"heɓugo" v pret': True, ';\t"heɓugo" v sta': True}
+216 | "am" prn pos p1 sg px1sg | {'"am" prn p1 sg obj': True, '"am" prn pos p1 sg px1sg': False, ';\t"am" prn pos p1 sg px1sg': True}
+218 | "naawugo" v pret | {'"naawugo" v sta': True, '"naawugo" v pret': False, ';\t"naawugo" v pret': True}
+221 | "maa" cnjcoo | {'"maa" cnjcoo': False, '"maa" prn p2 sg obj': True, '"maa" prn pos p2 sg': False, ';\t"maa" prn pos p2 sg': True}
+221 | "maa" prn pos p2 sg | {'"maa" cnjcoo': False, '"maa" prn p2 sg obj': True, '"maa" prn pos p2 sg': False, ';\t"maa" prn pos p2 sg': True}
+226 | "naa" neg | {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True}
+227 | "maa" prn p2 sg obj | {'"maa" cnjcoo': True, '"maa" prn p2 sg obj': False, '"maa" prn pos p2 sg': False, ';\t"maa" prn p2 sg obj': True, ';\t"maa" prn pos p2 sg': True}
+227 | "maa" prn pos p2 sg | {'"maa" cnjcoo': True, '"maa" prn p2 sg obj': False, '"maa" prn pos p2 sg': False, ';\t"maa" prn p2 sg obj': True, ';\t"maa" prn pos p2 sg': True}
+244 | "yiidugo" v sta | {'"yiidugo" v sta': False, '"yiidugo" v pret': True, ';\t"yiidugo" v sta': True}
+247 | "am" prn p1 sg obj | {'"am" prn p1 sg obj': False, '"am" prn pos p1 sg px1sg': True, ';\t"am" prn p1 sg obj': True}
+250 | "o" cnjsub cl_o | {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': False}
+250 | "o" prn p3 sg subj mf | {'"o" cnjsub cl_o': False, '"o" prn p3 sg subj mf': False}
+251 | "nanugo" v pret neg | {'"nanugo" v pret neg': False}
+252 | "habaru" n sg cl_ndu | {'"habaru" n sg cl_ndu': False}
+254 | "jooni" adv | {'"jooni" adv': False}
+255 | "." sent | {'"." sent': False}
+
+Decisions:
+
+                TP      FP      TN      FN
+SELECT:21       1       0       0       0
+SELECT:36       24      0       0       0
+SELECT:24       6       0       0       0
+SELECT:51       5       2       0       0
+REMOVE:66       3       0       0       0
+SELECT:54       2       0       0       0
+SELECT:72       1       0       0       0
+SELECT:63       1       0       0       0
+SELECT:42       3       0       0       0
+SELECT:45       2       0       0       0
+
+--------------------------------------------------------------------------------
+Input analyses: 347
+Reference analyses: 332
+Output analyses: 297
+
+Input ambiguity: 1.3607843137254902
+Reference ambiguity: 1.3019607843137255
+Output ambiguity: 1.1647058823529413
+
+False positives: 2
+False negatives: 56
+True positives: 48
+True negatives: 218
+
+Precision: 0.96
+Recall: 0.46153846153846156
+F1: 0.6234
