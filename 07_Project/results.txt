@@ -1,0 +1,89 @@
+Tokens:
+
+
+Errors:
+
+7 | "waalugo" v pret | {'"waalugo" v sta': True, '"waalugo" v pret': False}
+13 | "haa" pr | {'"haa" cnjsub': False, '"haa" pr': True, '"haa" v imp sg': False}
+25 | "wiʼugo" v pret | {'"wiʼugo" v sta': True, '"wiʼugo" v pret': False, ';\t"wiʼugo" v pret': True}
+31 | "ɗuuɗugo" v sta | {'"ɗuuɗugo" v sta': False, '"ɗuuɗugo" v pret': True, ';\t"ɗuuɗugo" v sta': True}
+48 | "waɗugo" v sta | {'"waɗugo" v sta': False, '"waɗugo" v pret': True, ';\t"waɗugo" v sta': True}
+
+Decisions:
+
+		TP	FP	TN	FN
+SELECT:19 	1	0	0	0
+SELECT:31 	3	0	0	0
+SELECT:22 	2	0	0	0
+SELECT:40 	1	1	0	0
+SELECT:37 	2	0	0	0
+
+--------------------------------------------------------------------------------
+Input analyses: 77
+Reference analyses: 75
+Output analyses: 67
+
+Input ambiguity: 1.1846153846153846
+Reference ambiguity: 1.1538461538461537
+Output ambiguity: 1.0307692307692307
+
+False positives: 1
+False negatives: 4
+True positives: 9
+True negatives: 56
+
+Precision: 0.9
+Recall: 0.6923076923076923
+F1: 0.7826
+
+ ('Buuba', {'"Buuba" n ant': True})
+16 | ('.', {'"." sent': True})
+17 | ('Ndaa', {'"ndaa" adv': True})
+18 | ('deftere', {'"deftere" n sg cl_nde': True})
+19 | ('peetel', {'"peetel" adj': True})
+20 | ('nde', {'"nde" cnjsub cl_nde': True, '"nde" prn p3 sg cl_nde': False, ';\t"nde" prn p3 sg cl_nde': True})
+21 | ('mi', {'"mi" prn p1 sg subj': True})
+22 | ('soodante', {'"soodugo" v fut o_sg2 ben': True})
+23 | ('.', {'"." sent': True})
+24 | ('Moy', {'"moy" prn itg': True})
+25 | ('wiʼi', {'"wiʼugo" v sta': True, '"wiʼugo" v pret': False, ';\t"wiʼugo" v pret': True})
+26 | ('mo', {'"mo" prn p3 sg obj mf': True})
+27 | ('haalaaji', {'"haala" n pl cl_ɗi': True})
+28 | ('.', {'"." sent': True})
+29 | ('Hande', {'"Hande" n ant': True})
+30 | ('kuugal', {'"kuugal" n sg cl_ngal': True})
+31 | ('ɗuuɗi', {'"ɗuuɗugo" v sta': False, '"ɗuuɗugo" v pret': True, ';\t"ɗuuɗugo" v sta': True})
+32 | ('.', {'"." sent': True})
+33 | ('Sutura', {'"Sutura" np ant': True})
+34 | ('bee', {'"bee" pr': True})
+35 | ('Usumaanu', {'"Usumaanu" n ant': True})
+36 | ('yiɗaa', {'"yiɗugo" v pret neg': True})
+37 | ('gawri', {'"gawri" n sg cl_ndi': True})
+38 | ('.', {'"." sent': True})
+39 | ('Hande', {'"Hande" n ant': True})
+40 | ('ɗi', {'"ɗi" cnjsub cl_ɗi': True, '"ɗi" prn p3 pl': False, ';\t"ɗi" prn p3 pl': True})
+41 | ('majjaay', {})
+42 | ('hakkunde', {})
+43 | ('saare', {'"saare" n sg cl_nde': True})
+44 | ('bee', {'"bee" pr': True})
+45 | ('waalde', {'"waalde" n sg cl_nde': True})
+46 | ('.', {'"." sent': True})
+47 | ('Ɗum', {'"ɗum" prn p3 subj mfn': True})
+48 | ('waɗi', {'"waɗugo" v sta': False, '"waɗugo" v pret': True, ';\t"waɗugo" v sta': True})
+49 | ('asaweere', {'"asaweere" n sg cl_nde': True})
+50 | ('woore', {'"gootel" num cl_nde': True})
+51 | ('.', {'"." sent': True})
+52 | ('Too', {'"too" adv': True})
+53 | (',', {'"," cm': True})
+54 | ('wartu', {'"wartugo" v imp sg': True})
+55 | ('jam', {'"jam" adv': True})
+56 | ('.', {'"." sent': True})
+57 | ('Walaa', {'"walaa" plr neg': True})
+58 | ('pukaraajo', {'"pukaraajo" n sg cl_o': True})
+59 | ('naa', {'"naa" neg': False, '"naa" plr': True, ';\t"naa" neg': True})
+60 | ('.', {'"." sent': True})
+61 | ('Ooho', {'"ooho" adv': True})
+62 | (',', {'"," cm': True})
+63 | ('walaa', {'"walaa" plr neg': True})
+64 | ('fayande', {'"fayande" n sg cl_nde': True})
+65 | ('.', {'"." sent': True})

@@ -1,0 +1,178 @@
+"<Naa>"
+	"naa" neg SELECT:19
+;	"naa" plr SELECT:19
+"<ɗum>"
+	"ɗum" prn p3 subj mfn
+"<modibbo>"
+	"modibbo" n sg cl_o
+"<.>"
+	"." sent
+
+
+
+"<Buuba>"
+	"Buuba" n ant
+"<ɗon>"
+	"ɗon" vaux SELECT:31
+;	"ɗon" adv SELECT:31
+;	"ɗon" loc SELECT:31
+;	"ɗon" int SELECT:31
+"<waali>"
+	"waalugo" v sta
+	"waalugo" v pret
+"<naa>"
+	"naa" plr SELECT:22
+;	"naa" neg SELECT:22
+"<.>"
+	"." sent
+
+
+
+"<Ɗum>"
+	"ɗum" prn p3 subj mfn
+"<ɗume>"
+	"ɗume" prn itg
+"<on>"
+	"on" prn p2 pl subj obj
+"<haa>"
+	"haa" cnjsub SELECT:40
+;	"haa" SELECT:40
+;	"haa" pr SELECT:40
+;	"haa" v imp sg SELECT:40
+"<saare>"
+	"saare" n sg cl_nde
+"<Buuba>"
+	"Buuba" n ant
+"<.>"
+	"." sent
+
+
+
+"<Ndaa>"
+	"ndaa" adv
+"<deftere>"
+	"deftere" n sg cl_nde
+"<peetel>"
+	"peetel" adj
+"<nde>"
+	"nde" cnjsub cl_nde SELECT:37
+;	"nde" prn p3 sg cl_nde SELECT:37
+"<mi>"
+	"mi" prn p1 sg subj
+"<soodante>"
+	"soodugo" v fut o_sg2 ben
+"<.>"
+	"." sent
+
+
+
+"<Moy>"
+	"moy" prn itg
+"<wiʼi>"
+	"wiʼugo" v sta
+	"wiʼugo" v pret
+"<mo>"
+	"mo" prn p3 sg obj mf
+"<haalaaji>"
+	"haala" n pl cl_ɗi
+"<.>"
+	"." sent
+
+
+
+"<Hande>"
+	"Hande" n ant
+"<kuugal>"
+	"kuugal" n sg cl_ngal
+"<ɗuuɗi>"
+	"ɗuuɗugo" v sta
+	"ɗuuɗugo" v pret
+"<.>"
+	"." sent
+
+
+
+"<Sutura>"
+	"Sutura" np ant
+"<bee>"
+	"bee" pr
+"<Usumaanu>"
+	"Usumaanu" n ant
+"<yiɗaa>"
+	"yiɗugo" v pret neg
+"<gawri>"
+	"gawri" n sg cl_ndi
+"<.>"
+	"." sent
+
+
+
+"<Hande>"
+	"Hande" n ant
+"<ɗi>"
+	"ɗi" cnjsub cl_ɗi SELECT:37
+;	"ɗi" prn p3 pl SELECT:37
+"<majjaay>"
+	"*majjaay"
+"<hakkunde>"
+	"*hakkunde"
+"<saare>"
+	"saare" n sg cl_nde
+"<bee>"
+	"bee" pr
+"<waalde>"
+	"waalde" n sg cl_nde
+"<.>"
+	"." sent
+
+
+
+"<Ɗum>"
+	"ɗum" prn p3 subj mfn
+"<waɗi>"
+	"waɗugo" v sta
+	"waɗugo" v pret
+"<asaweere>"
+	"asaweere" n sg cl_nde
+"<woore>"
+	"gootel" num cl_nde
+"<.>"
+	"." sent
+
+
+
+"<Too>"
+	"too" adv
+"<,>"
+	"," cm
+"<wartu>"
+	"wartugo" v imp sg
+"<jam>"
+	"jam" adv
+"<.>"
+	"." sent
+
+
+
+"<Walaa>"
+	"walaa" plr neg
+"<pukaraajo>"
+	"pukaraajo" n sg cl_o
+"<naa>"
+	"naa" plr SELECT:22
+;	"naa" neg SELECT:22
+"<.>"
+	"." sent
+
+
+
+"<Ooho>"
+	"ooho" adv
+"<,>"
+	"," cm
+"<walaa>"
+	"walaa" plr neg
+"<fayande>"
+	"fayande" n sg cl_nde
+"<.>"
+	"." sent

@@ -1,0 +1,1015 @@
+# Morphological Transducer for Adamawa Fulfulde
+
+# Part of speech categories
+# <n>      # Noun
+# <v>      # Verb
+# <adj>    # Adjective
+# <num>    # Numeral
+
+# <sent>   # Sentence-ending punctuation
+# <guio>   # Hyphen
+# <cm>     # Comma
+# <apos>   # Apostrophe
+# <quot>   # Quotation mark
+# <lquot>  # Left quotation mark
+# <rquot>  # Right quotation mark
+# <lpar>   # Left parenthesis
+# <rpar>   # Right parenthesis
+
+# Number morphology
+# <pl>     # Plural
+# <sg>     # Singular
+
+# Other symbols
+# >        # Morpheme boundary
+
+###############################################################################
+###                       M O R P H O T A C T I C S                         ###
+###############################################################################
+
+PATTERNS
+## Example inflection pattern:
+# NounRoot RegNounInfl
+Number
+Punctuation
+
+
+## Example inflection lexicon:
+# LEXICON RegNounInfl
+# <n><sg>:
+# <n><pl>:>s
+
+
+###############################################################################
+###                          L E X I C O N                                  ###
+###############################################################################
+
+## Example stem lexicon:
+# LEXICON NounRoot
+# house:house   # A noun
+
+
+PATTERN Number
+Numeral [<num>:]
+
+LEXICON Numeral
+/([0123456789])+/
+/([0123456789])+[.,]([0123456789])+/
+
+LEXICON Punctuation
+
+.<sent>:.
+..<sent>:..
+...<sent>:...
+;<sent>:;
+\:<sent>:\:
+!<sent>:!
+-<guio>:-
+—<guio>:—
+,<cm>:,
+?<sent>:? 
+'<apos>:'
+"<quot>:"
+«<lquot>:«
+»<rquot>:»
+”<rquot>:”
+“<lquot>:“
+(<lpar>:(
+\]<rpar>:\]
+\[<lpar>:\[
+)<rpar>:)
+\\<sent>:\\
+\/<sent>:\/
+
+
+# Resources:
+# https://github.com/apertium/lexd/blob/master/Usage.md
+# https://wiki.apertium.org/wiki/List_of_symbols
+# https://wiki.apertium.org/wiki/Starting_a_new_language_with_HFST#Lexicon
+# https://wiki.apertium.org/wiki/Lttoolbox_and_lexc
+# https://wiki.apertium.org/wiki/Apertium-specific_conventions_for_lexc
+# https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstHome
+# https://github.com/hfst/
+# https://wiki.apertium.org/wiki/Hfst
+
+PATTERNS
+VerbRoot VerbInfl? Counterfactual?
+VerbRoot :VerbInfix VerbInfl VerbInfix:
+AuxiliaryRoot
+AuxiliaryRoot AuxiliaryInfl
+Noun_ɗam
+Noun_ka
+Noun_ki
+Noun_ko
+Noun_nde
+Noun_ndi
+Noun_ndu
+Noun_nga
+Noun_ngal
+Noun_nge
+Noun_ngel
+Noun_ngo
+Noun_ngol
+Noun_ngu
+Noun_o
+Noun_ɓe
+Noun_ɗe
+Noun_ɗi
+Noun_koy
+ClasslessNoun
+Pronoun
+Adjective
+Adverb
+Preposition
+CoordConj
+SubordConj
+ConjAdverb
+Numeral
+Polarity
+FunctionWord
+Interjection
+
+LEXICON VerbRoot
+accugo:acc # to leave, leave off, let go
+andinugo:andin # to inform, tell
+andugo:and # to know
+buutugo:buut # to be inexpensive
+ɓadugi:ɓad
+ɓalugo:ɓal
+ɓedugo:ɓed
+ɓurugo:ɓur
+darugo:dar # to stand, stop
+defugo:def
+dillugo:dill # to go, to go away
+doggugo:dogg
+durugo:dur
+ɗaanugo:ɗaan # to sleep
+ɗuuɗugo:ɗuuɗ
+eggugi:egg
+ekkitugo:ekkit
+faamugo:faam
+faddugo:fadd
+famɗugo:famɗ
+fijugo:fij
+filugo:fil
+findinugo:findin
+fuɗɗugo:fuɗɗ
+haa
+hasitugo:hasit
+heɓugo:heɓ
+heftugo:heft
+heʼugo:heʼ
+hirtugo:hirt
+hofnugo:hofn
+hokkugo:hokk
+hollugo:holl
+hootugo:hoot
+hoynugo:hoyt
+huɓɓugo:huɓɓ
+huuwugo:huuw
+jaabugo:jaab
+jaɓugo:jaɓ
+jaɓɓugo:jaɓɓ
+jangugo:jang
+jarribugo:jarrib
+jinnugi:jinn
+jippugo:jipp
+jogugo:jog
+joodʼugo:joodʼ # to sit, dwell, reside
+juulugo:juul
+laanyugo:laany
+laarugo:laar
+limugo:lim
+lorugo:lor
+lortugo:lort
+luttugo:lutt
+maɓɓugo:maɓɓ
+maɓɓitugo:maɓɓit
+marugo:mar
+mawnugo:mawn
+meeɗugo:meeɗ
+meemugo:meem
+mottugo:mott
+naawugo:naaw
+nanugo:nan
+nastugo:nast
+neeɓugo:neeɓ
+nelugo:nel
+noddugo:nodd
+nyaamugo:nyaam # to eat
+nyallugo:nyall
+nyiɓugo:nyiɓ
+ranwugo:ranw
+remugo:rem
+resugo:res
+roondugo:roond # to carry (a load on head)
+sappugo:sapp
+silminugo:silmin
+somugo:som
+soodugo:sood # to buy
+soofugo:soof
+soorugo:soor
+suɓtugo:suɓt
+tammugo:tamm
+tawugo:taw
+teʼugo:teʼ
+tiggugo:tigg
+tiitugo:tiit
+timmugo:timm
+timminugo:timmin
+tokkugo:tokk
+ummugo:umm
+unugo:un
+usugo:us
+ustugo:ust
+waalugo:waal # to lie down, spend the night
+waancugi:waanc
+waawugo:waaw
+waddugo:wadd
+waɗugo:waɗ
+wallugo:wall
+warugo:war
+wartugo:wart
+waʼugo:waʼ
+wayrugo:wayr
+welugo:wel
+windugo:wind # to buy
+wiʼugo:wiʼ
+woɗɗugo:woɗɗ
+wolwugo:wol
+wonugo:won
+woodugo:wood
+wooɗugo:wooɗ
+woojugi:wooj
+wurtugo:wurt
+wuuw:wuuw
+yaadugo:yaad
+yaarugo:yaar
+yahugo:yah
+yamɗugo:yamɗ
+yamɗitugo:yamɗit
+yamugo:yam
+yarugo:yar
+yeccugo:yecc
+yejjitugo:yejjit
+yettugo:yett # to thank
+yiɗugo:yiɗ
+yiidugo:yiid
+yillugo:yill
+yiʼugo:yiʼ
+yoorugo:yor
+yottugo:yott
+ƴamugo:yam # to ask
+
+LEXICON VerbInfix
+<ben>:an
+<dst>:oy # far away
+<caus>:in
+
+LEXICON VerbInfl
+<v><inf>:ugo
+<v><inf>:go
+<v><pprs>:a
+<v><pprs><neg>:ataa
+<v><past><pprs><neg>:ataano
+<v><sta>:i
+<v><sta><neg>:aaki
+<v><past><sta><neg>:aakino
+<v><pret>:i
+<v><pret><neg>:aay
+<v><pret><neg><o_sg1>:aayam
+<v><pret><neg>:aa
+<v><fut>:an
+<v><fut>:ay
+<v><fut><o_sg1>:at
+<v><fut><o_sg1>:tam
+<v><fut><o_sg2>:ete
+<v><fut><o_sg2>:te
+<v><fut><rel>:ata
+<v><imp><sg>:u
+<v><imp><sg>:
+<v><imp><sg><o_sg1>:am
+<v><imp><pl>:ee
+<v><hab>:an
+<v><hab>:ay
+<v><sub>:a
+<v><sub><o_sg2>:e
+
+LEXICON Counterfactual
+<cntfct>:no
+
+LEXICON AuxiliaryRoot
+daa<vaux><cntfct>:daa
+ɗon<vaux>:ɗon
+taa<vaux><neg>:taa
+
+LEXICON AuxiliaryInfl
+<past>:no
+
+LEXICON Noun_ɗam
+kosam<n><sg><cl_ɗam>:kosam
+ndiyam<n><sg><cl_ɗam>:ndiyam
+nyebbam<n><sg><cl_ɗam>:nyebbam
+
+LEXICON Noun_ka
+alluha<n><sg><cl_ka>:alluha
+haala<n><sg><cl_ka>:haala
+jiiba<n><sg><cl_ka>:jiiba
+manda<n><sg><cl_ka>:manda
+ngesa<n><sg><cl_ka>:ngesa
+ngewta<n><sg><cl_ka>:ngewta
+reeta<n><sg><cl_ka>:reeta
+
+LEXICON Noun_ki
+ɓokki<n><sg><cl_ki>:ɓokki
+danki<n><sg><cl_ki>:danki
+lekki<n><sg><cl_ki>:lekki
+
+LEXICON Noun_ko
+hottollo<n><sg><cl_ko>:hottollo
+huɗo<n><sg><cl_ko>:huɗo
+
+LEXICON Noun_nde
+asaweere<n><sg><cl_nde>:asaweere
+asira<n><sg><cl_nde>:asira
+asiriire<n><sg><cl_nde>:asiriire
+baalte<n><sg><cl_nde>:baalte
+ɓernde<n><sg><cl_nde>:ɓernde
+daande<n><sg><cl_nde>:daande
+deftere<n><sg><cl_nde>:deftere
+fayande<n><sg><cl_nde>:fayande
+fijirde<n><sg><cl_nde>:fijirde
+haɓɓere<n><sg><cl_nde>:haɓɓere
+hinere<n><sg><cl_nde>:hinere
+hitaande<n><sg><cl_nde>:hitaande
+hoore<n><sg><cl_nde>:hoore
+huɓɓirde<n><sg><cl_nde>:huɓɓirde
+huunde<n><sg><cl_nde>:huunde
+innde<n><sg><cl_nde>:innde
+jangde<n><sg><cl_nde>:jangde
+jangirde<n><sg><cl_nde>:jangirde
+jemma<n><sg><cl_nde>:jemma
+jokkere<n><sg><cl_nde>:jokkere
+joonde<n><sg><cl_nde>:joonde
+kiikiɗe<n><sg><cl_nde>:kiikiɗe
+kobo<n><sg><cl_nde>:kobo
+koboore<n><sg><cl_nde>:koboore
+kondong<n><sg><cl_nde>:kondong
+ladde<n><sg><cl_nde>:ladde
+loonde<n><sg><cl_nde>:loonde
+lootirde<n><sg><cl_nde>:lootirde
+mangoro<n><sg><cl_nde>:mangoro
+manoore<n><sg><cl_nde>:manoore
+minti<n><sg><cl_nde>:minti
+mintiire<n><sg><cl_nde>:mintiire
+Nasaraare<n><sg><cl_nde>:Nasaraare
+nonde<n><sg><cl_nde>:nonde
+nyande<n><sg><cl_nde>:nyande
+rowani<n><sg><cl_nde>:rowani
+rowaniire<n><sg><cl_nde>:rowaniire
+saare<n><sg><cl_nde>:saare
+saʼinde<n><sg><cl_nde>:saʼinde
+siwtaare<n><sg><cl_nde>:siwtaare
+suley<n><sg><cl_nde>:suley
+suleere<n><sg><cl_nde>:suleere
+tingyeere<n><sg><cl_nde>:tingyeere
+tumaatir<n><sg><cl_nde>:tumaatir
+tumaatiire<n><sg><cl_nde>:tumaatiire
+tummude<n><sg><cl_nde>:tummude
+waalde<n><sg><cl_nde>:waalde
+waflaare<n><sg><cl_nde>:waflaare
+wakkati<n><sg><cl_nde>:wakkati
+yiite<n><sg><cl_nde>:yiite
+yiitere<n><sg><cl_nde>:yiitere
+yonnde<n><sg><cl_nde>:yonnde
+
+LEXICON Noun_ndi
+comri<n><sg><cl_ndi>:comri
+fajiri<n><sg><cl_ndi>:fajiri
+gawri<n><sg><cl_ndi>:gawri
+leddi<n><sg><cl_ndi>:leddi
+lesdi<n><sg><cl_ndi>:lesdi
+njamndi<n><sg><cl_ndi>:njamndi
+nyiiri<n><sg><cl_ndi>:nyiiri
+
+LEXICON Noun_ndu
+akootiru<n><sg><cl_ndu>:akootiru
+bukkaaru<n><sg><cl_ndu>:bukkaaru
+ɓandu<n><sg><cl_ndu>:ɓandu
+ɓoosaaru<n><sg><cl_ndu>:ɓoosaaru
+duniyaaru<n><sg><cl_ndu>:duniyaaru
+habaru<n><sg><cl_ndu>:habaru
+koloba<n><sg><cl_ndu>:koloba
+kolobaaru<n><sg><cl_ndu>:kolobaaru
+lewru<n><sg><cl_ndu>:lewru
+nofuru<n><sg><cl_ndu>:nofuru
+nyamdu<n><sg><cl_ndu>:nyamdu
+reedu<n><sg><cl_ndu>:reedu
+sondu<n><sg><cl_ndu>:sondu
+suudu<n><sg><cl_ndu>:suudu
+unordu<n><sg><cl_ndu>:unordu
+wawru<n><sg><cl_ndu>:wawru
+
+LEXICON Noun_nga
+agoogo<n><sg><cl_nga>:agoogo
+agoogowa<n><sg><cl_nga>:agoogowa
+aji<n><sg><cl_nga>:aji
+ajiwa<n><sg><cl_nga>:ajiwa
+asaana<n><sg><cl_nga>:asaana
+baskur<n><sg><cl_nga>:baskur
+baskurwa<n><sg><cl_nga>:baskurwa
+footo<n><sg><cl_nga>:footo
+goonga<n><sg><cl_nga>:goonga
+kanti<n><sg><cl_nga>:kanti
+kantiwa<n><sg><cl_nga>:kantiwa
+mbaala<n><sg><cl_nga>:mbaala
+mbeewa<n><sg><cl_nga>:mbeewa
+moota<n><sg><cl_nga>:moota
+ndabbawa<n><sg><cl_nga>:ndabbawa
+saaʼa<n><sg><cl_nga>:saaʼa
+taaga<n><sg><cl_nga>:taaga
+tebur<n><sg><cl_nga>:tebur
+
+LEXICON Noun_ngal
+ballal<n><sg><cl_ngal>:ballal
+dammugal<n><sg><cl_ngal>:dammugal
+gertogal<n><sg><cl_ngal>:gertogal
+jaawngal<n><sg><cl_ngal>:jaawngal
+jigaawal<n><sg><cl_ngal>:jigaawal
+koombowal<n><sg><cl_ngal>:koombowal
+koroowal<n><sg><cl_ngal>:koroowal
+kosngal<n><sg><cl_ngal>:kosngal
+kuugal<n><sg><cl_ngal>:kuugal
+leggal<n><sg><cl_ngal>:leggal
+nelal<n><sg><cl_ngal>:nelal
+piiroowal<n><sg><cl_ngal>:piiroowal
+
+LEXICON Noun_nge
+naange<n><sg><cl_nge>:naange
+nagge<n><sg><cl_nge>:nagge
+
+LEXICON Noun_ngel
+baalel<n><sg><cl_ngel>:baalel
+ɓingel<n><sg><cl_ngel>:ɓingel
+gurel<n><sg><cl_ngel>:gurel
+kusel<n><sg><cl_ngel>:kusel
+pellel<n><sg><cl_ngel>:pellel
+
+LEXICON Noun_ngo
+ɓaawo<n><sg><cl_ngo>:ɓaawo
+daago<n><sg><cl_ngo>:daago
+gooro<n><sg><cl_ngo>:gooro
+jungo<n><sg><cl_ngo>:jungo
+leeso<n><sg><cl_ngo>:leeso
+luumo<n><sg><cl_ngo>:luumo
+maayo<n><sg><cl_ngo>:maayo
+wuro<n><sg><cl_ngo>:wuro
+yeeso<n><sg><cl_ngo>:yeeso
+
+LEXICON Noun_ngol
+bindirgol<n><sg><cl_ngol>:bindirgol
+buulol<n><sg><cl_ngol>:buulol
+dawrawol<n><sg><cl_ngol>:dawrawol
+ɗereewol<n><sg><cl_ngol>:ɗereewol
+koowaagol<n><sg><cl_ngol>:koowaagol
+laawol<n><sg><cl_ngol>:laawol
+loosol<n><sg><cl_ngol>:loosol
+ngapaleewol<n><sg><cl_ngol>:ngapaleewol
+ngeccawol<n><sg><cl_ngol>:ngeccawol
+pataakewol<n><sg><cl_ngol>:pataakewol
+peewol<n><sg><cl_ngol>:peewol
+soorowol<n><sg><cl_ngol>:soorowol
+taalol<n><sg><cl_ngol>:taalol
+ƴamol<n><sg><cl_ngol>:ƴamol
+
+LEXICON Noun_ngu
+coggu<n><sg><cl_ngu>:coggu
+jamanu<n><sg><cl_ngu>:jamanu
+liingu<n><sg><cl_ngu>:liingu
+mbeɗu<n><sg><cl_ngu>:mbeɗu
+mbulku<n><sg><cl_ngu>:mbulku
+ngabbu<n><sg><cl_ngu>:ngabbu
+puccu<n><sg><cl_ngu>:puccu
+
+LEXICON Noun_o
+Amerikaajo<n><sg><cl_o>:Amerikaajo # American
+baaba<n><sg><cl_o>:baaba # father
+baabiraawo<n><sg><cl_o>:baabiraawo # father
+bandiraawo<n><sg><cl_o>:bandiraawo # blood relative
+biɗɗo<n><sg><cl_o>:biɗɗo # offspring, son, daughter
+ɓii<n><sg><cl_o>:ɓii # offspring, son, daughter
+daada<n><sg><cl_o>:daada # mother
+daadiraawo<n><sg><cl_o>:daadiraawo # mother
+debbo<n><sg><cl_o>:debbo # woman, wife
+dewerɗiraawo<n><sg><cl_o>:dewerɗiraawo # sibling, brother, sister
+ɗumeejo<n><sg><cl_o>:ɗumeejo # what nationality
+esiraawo<n><sg><cl_o>:esiraawo # in-law
+goɗɗo<n><sg><cl_o>:goɗɗo # someone
+gorko<n><sg><cl_o>:gorko # man, husband
+Hawsaajo<n><sg><cl_o>:Hawsaajo # Hausa person
+jawmu<n><sg><cl_o>:jawmu # owner, master
+koɗo<n><sg><cl_o>:koɗo # stranger, guest, visitor
+laamiiɗo<n><sg><cl_o>:laamiiɗo # king, emir
+maamiraawo<n><sg><cl_o>:maamiraawo # grandparent, grandfather, grandmother
+mallumjo<n><sg><cl_o>:mallumjo # teacher
+mawɗo<n><sg><cl_o>:mawɗo # a big one, adult
+mawniraawo<n><sg><cl_o>:mawniraawo # older sibling
+minyiraawo<n><sg><cl_o>:minyiraawo # younger sibling
+modibbo<n><sg><cl_o>:modibbo # learned person, teacher
+moyjo<n><sg><cl_o>:moyjo # what type of person
+nawliraawo<n><sg><cl_o>:nawliraawo # co-wife
+nayeejo<n><sg><cl_o>:nayeejo # old man
+ndottiijo<n><sg><cl_o>:ndottiijo # respected man
+neɗɗo<n><sg><cl_o>:neɗɗo # person
+pukaraajo<n><sg><cl_o>:pukaraajo # student
+Pullo<n><sg><cl_o>:Pullo # Fulani
+soobaajo<n><sg><cl_o>:soobaajo # friend
+taaniraawo<n><sg><cl_o>:taaniraawo # grandchild
+tiniiɗo<n><sg><cl_o>:tiniiɗo # zealous peerson
+Tuurankeejo<n><sg><cl_o>:Tuurankeejo # European, English person
+
+LEXICON Noun_ɓe
+Amerikaajo<n><pl><cl_ɓe>:Amerikaʼen # Americans
+baabiraawo<n><pl><cl_ɓe>:baabiraaɓe # fathers
+biɗɗo<n><pl><cl_ɓe>:ɓiɓɓe 
+bandiraawo<n><pl><cl_ɓe>:bandiraaɓe # blood relatives
+daadiraawo<n><pl><cl_ɓe>:daadiraaɓe # mothers
+debbo<n><pl><cl_ɓe>:rewɓe
+dewerɗiraawo<n><pl><cl_ɓe>:dewerɗiraaɓe # siblings, brothers, sisters
+ɗumeejo<n><pl><cl_ɓe>:ɗumeʼen # what nationalities
+ɗumeejo<n><pl><cl_ɓe>:ɓeyeʼen # what nationalities
+esiraawo<n><pl><cl_ɓe>:esiraaɓe # in-laws
+goɗɗo<n><pl><cl_ɓe>:goɗɓe # some people
+gorko<n><pl><cl_ɓe>:gorɓe # men, husbands
+Hawsaajo<n><pl><cl_ɓe>:Hawsaʼen # Hausa people
+himɓe<n><pl><cl_ɓe>:himɓe
+jawmu<n><pl><cl_ɓe>:jawmuʼen # owners, masters
+koɗo<n><pl><cl_ɓe>:hoɓɓe 
+laamiiɗo<n><pl><cl_ɓe>:laamiiɓe # kings, emirs
+maamiraawo<n><pl><cl_ɓe>:maamiraaɓe # grandparents, grandfathers, grandmothers
+mallumjo<n><pl><cl_ɓe>:mallumʼen # teachers
+mawɗo<n><pl><cl_ɓe>:mawɓe # some big ones, adults
+mawniraawo<n><pl><cl_ɓe>:mawniraaɓe # older siblings
+minyiraawo<n><pl><cl_ɓe>:minyiraaɓe # younger siblings
+modibbo<n><pl><cl_ɓe>:modiɓɓe
+moyjo<n><pl><cl_ɓe>:moyʼen # what types of person
+nawliraawo<n><pl><cl_ɓe>:nawliraaɓe # co-wives
+nayeejo<n><pl><cl_ɓe>:nayeʼen # old men
+ndottiijo<n><pl><cl_ɓe>:ndottiʼen # respected men
+neɗɗo<n><pl><cl_ɓe>:yimɓe
+pukaraajo<n><pl><cl_ɓe>:fukaraaɓe # students
+Pullo<n><pl><cl_ɓe>:Fulɓe # Fulanis
+soobaajo<n><pl><cl_ɓe>:soobaaʼen # friends
+taaniraawo<n><pl><cl_ɓe>:taaniraaɓe # grandchildren
+tiniiɗo<n><pl><cl_ɓe>:tiniiɓe # zealous people
+Tuurankeejo<n><pl><cl_ɓe>:Tuurankoʼen
+
+LEXICON Noun_ɗe
+asaweere<n><pl><cl_ɗe>:asaweeje
+booɗɗe<n><pl><cl_ɗe>:booɗɗe
+ɓokki<n><pl><cl_ɗe>:ɓoɗɗe
+ceede<n><pl><cl_ɗe>:ceede
+daago<n><pl><cl_ɗe>:daage
+dammugal<n><pl><cl_ɗe>:dammuɗe
+danki<n><pl><cl_ɗe>:dangɗe
+deftere<n><pl><cl_ɗe>:defte
+fayande<n><pl><cl_ɗe>:payanɗe
+fijirde<n><pl><cl_ɗe>:pijirɗe
+geene<n><pl><cl_ɗe>:geene
+gertogal<n><pl><cl_ɗe>:gertooɗe
+gooro<n><pl><cl_ɗe>:goorooje
+haɓɓere<n><pl><cl_ɗe>:kaɓɓe
+hitaande<n><pl><cl_ɗe>:kitaale
+huɓɓirde<n><pl><cl_ɗe>:kuɓɓirɗe
+huunde<n><pl><cl_ɗe>:kuuje
+innde<n><pl><cl_ɗe>:innɗe
+jangirde<n><pl><cl_ɗe>:jangirɗe
+jaawngal<n><pl><cl_ɗe>:jaawle
+jemma<n><pl><cl_ɗe>:jemmaare
+jigaawal<n><pl><cl_ɗe>:jigaaje
+jokkere<n><pl><cl_ɗe>:jokke
+jungo<n><pl><cl_ɗe>:juuɗe
+kare<n><pl><cl_ɗe>:kare
+kiikiɗe<n><pl><cl_ɗe>:kiikiiɗeere
+kine<n><pl><cl_ɗe>:kine
+kobo<n><pl><cl_ɗe>:kobooje
+koombowal<n><pl><cl_ɗe>:koombooje
+kondong<n><pl><cl_ɗe>:kondongje
+koroowal<n><pl><cl_ɗe>:koromje
+kosngal<n><pl><cl_ɗe>:kosɗe
+kuugal<n><pl><cl_ɗe>:kuuɗe
+leeso<n><pl><cl_ɗe>:leese
+leggal<n><pl<cl_>:leɗɗe
+loonde<n><pl><cl_ɗe>:looɗe
+luumo<n><pl><cl_ɗe>:luuɓe
+maayo<n><pl><cl_ɗe>:maaje
+mangoro<n><pl><cl_ɗe>:mangorooje
+ngesa<n><pl><cl_ɗe>:gese
+njamndi<n><pl><cl_ɗe>:jamɗe
+saare<n><pl><cl_ɗe>:ciʼe
+suley<n><pl><cl_ɗe>:suleeje
+tingyeere<n><pl><cl_ɗe>:tingyeeje
+tumaatir<n><pl><cl_ɗe>:tumaatirji
+tummude<n><pl><cl_ɗe>:tummuɗe
+waalde<n><pl><cl_ɗe>:balɗe
+wuro<n><pl><cl_ɗe>:gure
+yiitere<n><pl><cl_ɗe>:giite
+
+LEXICON Noun_ɗi
+agoogo<n><pl><cl_ɗi>:agoogooji
+akootiru<n><pl><cl_ɗi>:akootiji
+aji<n><pl><cl_ɗi>:ajiji
+baskur<n><pl><cl_ɗi>:baskurji
+bindirgol<n><pl><cl_ɗi>:bindirɗi
+bukkaaru<n><pl><cl_ɗi>:bukkaaji
+buulol<n><pl><cl_ɗi>:buuli
+ɓandu<n><pl><cl_ɗi>:ɓalli
+ɓoosaaru<n><pl><cl_ɗi>:ɓoosaaji
+canji<n><pl><cl_ɗi>:canji
+dawrawol<n><pl><cl_ɗi>:dawraaji
+ɗereewol<n><pl<cl_ɗi>:ɗereeji
+gurel<n><pl><cl_ɗi>:gurelji
+habaru<n><pl><cl_ɗi>:habaruuji
+haala<n><pl><cl_ɗi>:haalaaji
+jiiba<n><pl><cl_ɗi>:jiibaaji
+kanti<n><pl><cl_ɗi>:kantiji
+koloba<n><pl><cl_ɗi>:kolobaaji
+kusel<n><pl><cl_ɗi>:kuselji
+laawol<n><pl><cl_ɗi>:laabi
+lewru<n><pl><cl_ɗi>:lebbi
+liingu<n><pl><cl_ɗi>:liɗɗi
+loosol<n><pl><cl_ɗi>:loosi
+mbaala<n><pl><cl_ɗi>:baali
+mbeɗu<n><pl><cl_ɗi>:beɗi
+mbeewa<n><pl><cl_ɗi>:beeʼi
+mbulku<n><pl><cl_ɗi>:bulki
+minti<n><pl><cl_ɗi>:mintiiji
+moota<n><pl><cl_ɗi>:mootaaji
+nagge<n><pl><cl_ɗi>:naʼi
+ndabbawa<n><pl><cl_ɗi>:dabbaaji
+ngabbu<n><pl><cl_ɗi>:gabbi
+ngapaleewol<n><pl><cl_ɗi>:ngapaleeji
+ngeccawol<n><pl><cl_ɗi>:ngeccaaji
+ngewta<n><pl><cl_ɗi>:ngewtaaji
+nofuru<n><pl><cl_ɗi>:noppi
+pataakewol<n><pl><cl_ɗi>:pataakeeji
+pellel<n><pl><cl_ɗi>:pellelji
+piiroowal<n><pl><cl_ɗi>:piirooji
+puccu<n><pl><cl_ɗi>:pucci
+reeta<n><pl><cl_ɗi>:reetaaji
+sondu<n><pl><cl_ɗi>:colli
+soorowol<n><pl><cl_ɗi>:soorooji
+suudu<n><pl><cl_ɗi>:cuuɗi
+taaga<n><pl><cl_ɗi>:taagaaji
+taalol<n><pl><cl_ɗi>:taali
+tebur<n><pl><cl_ɗi>:teburji
+yiite<n><pl><cl_ɗi>:yiiteeji
+ƴamol<n><pl><cl_ɗi>:ƴami
+
+LEXICON Noun_koy
+baalel<n><pl><cl_koy>:mbaaloy
+ɓingel<n><pl><cl_koy>:ɓikkoy
+
+LEXICON ClasslessNoun
+Aaʼi<np><ant>:Aaʼi
+Abdullaahi<np><ant>:Abdullaahi
+Adamaawa<n><sg><np>:Adamaawa
+Alarba<n><sg>:Alarba
+Alat<n><sg>:Alat
+Alhamiisa<n><sg>:Alhamiisa
+Alim<n><ant>:Alim
+Alkurʼaana<n><sg>:Alkurʼaana
+Allah<n><sg><np>:Allah
+Altine<n><sg>:Altine
+Asawe<n><sg>:Asawe
+Astawaaɓi<n><ant>:Astawaaɓi
+Awdu<n><ant>:Awdu
+Buuba<n><ant>:Buuba
+Fulfulde<n>:Fulfulde
+Hande<n><ant>:Hande
+Jumɓaare<n><sg>:Jumɓaare
+Saalihu<np><ant>:Saalihu
+Salaasa<n><sg>:Salaasa
+Sutura<np><ant>:Sutura
+Usumaanu<n><ant>:Usumaanu
+Yaakubu<np><ant>:Yaakubu
+Zeynabu<np><ant>:Zeynabu
+
+LEXICON Pronoun
+mi<prn><p1><sg><subj>:mi
+yam<prn><p1><sg><obj>:yam
+am<prn><p1><sg><obj>:am
+a<prn><p2><sg><subj>:a
+ma<prn><p2><sg><obj>:ma
+maa<prn><p2><sg><obj>:maa
+o<prn><p3><sg><subj><mf>:o
+ɗum<prn><p3><subj><mfn>:ɗum
+mo<prn><p3><sg><obj><mf>:mo
+min<prn><p1><pl><excl><subj><obj>:min
+en<prn><p1><pl><incl><subj><obj>:en
+on<prn><p2><pl><subj><obj>:on
+ɓe<prn><p3><pl><subj><obj><mf>:ɓe
+am<prn><pos><p1><sg><px1sg>:am
+maa<prn><pos><p2><sg>:maa
+maaɗa<prn><pos><p2><sg>:maaɗa
+maako<prn><pos><p3><sg><mf>:maako
+amin<prn><pos><p1><pl><excl>:amin
+meeɗen<prn><pos><p1><pl><incl>:meeɗen
+men<prn><pos><p1><pl><incl>:men
+mooɗon<prn><pos><p2><pl>:mooɗon
+mon<prn><pos><p2><pl>:mon
+maɓɓe<prn><pos><p3><pl><mf>:maɓɓe
+min<prn><p1><sg><emph>:min
+an<prn><p2><sg><emph>:an
+kanko<prn><p3><sg><mf><emph>:kanko
+minin<prn><p1><pl><excl><emph>:minin
+enen<prn><p1><pl><incl><emph>:enen
+onon<prn><p2><pl><emph>:onon
+kamɓe<prn><p3><pl><emph>:kamɓe
+ɗam<prn><p3><sg><cl_ɗam>:ɗam
+ɗam<prn><pos><p3><sg><cl_ɗam>:maajam
+ɗam<prn><p3><sg><emph><cl_ɗam>:kaajam
+ɗam<prn><p3><sg><dem><prx><cl_ka>:ɗaʼam
+ɗam<prn><p3><sg><dem><prx><cl_ka>:ɗaam
+ɗam<prn><p3><sg><dem><dst><cl_ka>:ɗama
+ka<prn><p3><sg><cl_ka>:ka
+ka<prn><pos><p3><sg><cl_ka>:maaka
+ka<prn><p3><sg><emph><cl_ka>:kanka
+ka<prn><p3><sg><dem><prx><cl_ka>:kaʼa
+ka<prn><p3><sg><dem><prx><cl_ka>:kaa
+ka<prn><p3><sg><dem><dst><cl_ka>:kaya
+ki<prn><p3><sg><cl_ki>:ki
+ki<prn><pos><p3><sg><cl_ki>:maaki
+ki<prn><p3><sg><emph><cl_ki>:kanki
+ki<prn><p3><sg><dem><prx><cl_ki>:kiʼi
+ki<prn><p3><sg><dem><prx><cl_ki>:kii
+ki<prn><p3><sg><dem><dst><cl_ki>:kiya
+ko<prn><p3><sg><cl_ko>:ko
+ko<prn><pos><p3><sg><cl_ko>:maako
+ko<prn><p3><sg><emph><cl_ko>:kanko
+ko<prn><p3><sg><dem><prx><cl_ko>:koʼo
+ko<prn><p3><sg><dem><prx><cl_ko>:koo
+ko<prn><p3><sg><dem><dst><cl_ko>:koya
+nde<prn><p3><sg><cl_nde>:nde
+nde<prn><pos><p3><sg><cl_nde>:maare
+nde<prn><p3><sg><emph><cl_nde>:kayre
+nde<prn><p3><sg><dem><prx><cl_nde>:ndeʼe
+nde<prn><p3><sg><dem><prx><cl_nde>:ndee
+nde<prn><p3><sg><dem><dst><cl_nde>:ndeya
+ndi<prn><p3><sg><cl_ndi>:ndi
+ndi<prn><pos><p3><sg><cl_ndi>:maari
+ndi<prn><p3><sg><emph><cl_ndi>:kayri
+ndi<prn><p3><sg><dem><prx><cl_ndi>:ndiʼi
+ndi<prn><p3><sg><dem><prx><cl_ndi>:ndii
+ndi<prn><p3><sg><dem><dst><cl_ndi>:ndiya
+ndu<prn><p3><sg><cl_ndu>:ndu
+ndu<prn><pos><p3><sg><cl_ndu>:maaru
+ndu<prn><p3><sg><emph><cl_ndu>:kayru
+ndu<prn><p3><sg><dem><prx><cl_ndu>:nduʼu
+ndu<prn><p3><sg><dem><prx><cl_ndu>:nduu
+ndu<prn><p3><sg><dem><dst><cl_ndu>:nduya
+nga<prn><p3><sg><cl_nga>:nga
+nga<prn><pos><p3><sg><cl_nga>:maanga
+nga<prn><p3><sg><emph><cl_nga>:kanga
+nga<prn><p3><sg><dem><prx><cl_nga>:ngaʼa
+nga<prn><p3><sg><dem><prx><cl_nga>:ngaa
+nga<prn><p3><sg><dem><dst><cl_nga>:ngaya
+ngal<prn><p3><sg><cl_ngal>:ngal
+ngal<prn><pos><p3><sg><cl_ngal>:maangal
+ngal<prn><p3><sg><emph><cl_ngal>:kangal
+ngal<prn><p3><sg><dem><prx><cl_ngal>:ngaʼal
+ngal<prn><p3><sg><dem><prx><cl_ngal>:ngaal
+ngal<prn><p3><sg><dem><dst><cl_ngal>:ngaya
+nge<prn><p3><sg><cl_nge>:nge
+nge<prn><pos><p3><sg><cl_nge>:maange
+nge<prn><p3><sg><emph><cl_nge>:kange
+nge<prn><p3><sg><dem><prx><cl_ngal>:ngeʼe
+nge<prn><p3><sg><dem><prx><cl_ngal>:ngee
+nge<prn><p3><sg><dem><dst><cl_ngal>:ngeya
+ngel<prn><p3><sg><cl_ngel>:ngel
+ngel<prn><pos><p3><sg><cl_ngel>:maangel
+ngel<prn><p3><sg><emph><cl_ngel>:kangel
+ngel<prn><p3><sg><dem><prx><cl_ngel>:ngeʼel
+ngel<prn><p3><sg><dem><prx><cl_ngel>:ngeel
+ngel<prn><p3><sg><dem><dst><cl_ngel>:ngeya
+ngo<prn><p3><sg><cl_ngo>:ngo
+ngo<prn><pos><p3><sg><cl_ngo>:maango
+ngo<prn><p3><sg><emph><cl_ngo>:kango
+ngo<prn><p3><sg><dem><prx><cl_ngo>:ngoʼo
+ngo<prn><p3><sg><dem><prx><cl_ngo>:ngoo
+ngo<prn><p3><sg><dem><dst><cl_ngo>:ngoya
+ngol<prn><p3><sg><cl_ngol>:ngol
+ngol<prn><pos><p3><sg><cl_ngol>:maangol
+ngol<prn><p3><sg><emph><cl_ngol>:kangol
+ngol<prn><p3><sg><dem><prx><cl_ngol>:ngoʼol
+ngol<prn><p3><sg><dem><prx><cl_ngol>:ngool
+ngol<prn><p3><sg><dem><dst><cl_ngol>:ngoya
+ngu<prn><p3><sg>><cl_ngu>:ngu
+ngu<prn><pos><p3><sg><cl_ngu>:maangu
+ngu<prn><p3><sg><emph><cl_ngu>:kangu
+ngu<prn><p3><sg><dem><prx><cl_ngu>:nguʼu
+ngu<prn><p3><sg><dem><prx><cl_ngu>:nguu
+ngu<prn><p3><sg><dem><dst><cl_ngu>:nguya
+o<prn><p3><sg><dem><prx><cl_o>:oʼo
+o<prn><p3><sg><dem><prx><cl_o>:oo
+o<prn><p3><sg><dem><dst><cl_o>:oya
+ɓe<prn><p3><pl><dem><prx><cl_ɓe>:ɓeʼe
+ɓe<prn><p3><pl><dem><prx><cl_ɓe>:ɓee
+ɓe<prn><p3><pl><dem><dst><cl_ɓe>:ɓeya
+ɗe<prn><p3><pl>:ɗe
+ɗe<prn><pos><p3><pl>:maaje
+ɗe<prn><p3><pl><emph>:kanje
+ɗe<prn><p3><pl><dem><prx><cl_ɗe>:ɗeʼe
+ɗe<prn><p3><pl><dem><prx><cl_ɗe>:ɗee
+ɗe<prn><p3><pl><dem><dst><cl_ɗe>:ɗeya
+ɗi<prn><p3><pl>:ɗi
+ɗi<prn><pos><p3><pl>:maaji
+ɗi<prn><p3><pl><emph>:kanji
+ɗi<prn><p3><pl><dem><prx><cl_ɗi>:ɗiʼi
+ɗi<prn><p3><pl><dem><prx><cl_ɗi>:ɗii
+ɗi<prn><p3><pl><dem><dst><cl_ɗi>:ɗiya
+koy<prn><p3><pl>:koy
+koy<prn><pos><p3><pl>:maakoy
+koy<prn><p3><pl><emph>:kankoy
+koy<prn><p3><pl><dem><prx><cl_koy>:koʼoy
+koy<prn><p3><pl><dem><prx><cl_koy>:kooy
+koy<prn><p3><pl><dem><dst><cl_koy>:koya
+ɗume<prn><itg>:ɗume
+ko<prn><itg>:ko
+moy<prn><itg>:moy
+ndey<prn><itg>:ndey
+now<prn><itg>:noy
+toy<prn><itg>:toy
+ɗam<prn><itg><cl_ɗam>:ɗame
+ka<prn><itg><cl_ka>:kaye
+ki<prn><itg><cl_ki>:kiye
+ko<prn><itg><cl_ko>:koye
+nde<prn><itg><cl_nde>:ndeye
+ndi<prn><itg><cl_ndi>:ndiye
+ndu<prn><itg><cl_ndu>:nduye
+nga<prn><itg><cl_nga>:ngaye
+ngal<prn><itg><cl_ngal>:ngale
+nge<prn><itg><cl_nge>:ngeye
+ngel<prn><itg><cl_ngel>:ngele
+ngo<prn><itg><cl_ngo>:ngoye
+ngol<prn><itg><cl_ngol>:ngole
+ngu<prn><itg><cl_ngu>:nguye
+o<prn><itg><cl_o>:moye
+ɓe<prn><itg><cl_ɓe>:ɓeye
+ɗe<prn><itg><cl_ɗe>:ɗeye
+ɗi<prn><itg><cl_ɗi>:ɗiye
+koy<prn><itg><cl_koy>:koye
+man<prn>:man
+
+LEXICON Adjective
+feere<adj>:feere
+peetel<adj>:peetel
+famɗugo<adj><cl_nde>:famarde
+mawnugo<adj><cl_nde>:mawnde
+famɗugo<adj><cl_ngal>:pamaral 
+mawnugo<adj><cl_nde>:manngal 
+ɗuudugo<adj><cl_ngal>:ɗuungal
+famɗugo<adj><cl_nge>:famare 
+mawnugo<adj><cl_nge>:mannge
+famɗugo<adj><cl_ngu>:pamaru 
+mawnugo<adj><cl_ngu>:manngu
+famɗugo<adj><cl_ndu>:famardu 
+mawnugo<adj><cl_ndu>:mawndu
+famɗugo<adj><cl_ko>:pamaro 
+mawnugo<adj><cl_ko>:makko 
+ɗuudugo<adj><cl_ko>:duuɗko
+ɗuuɗudo<adj><cl_ɗam>:ɗuuɗam
+famɗugo<adj><cl_ka>:pamara 
+mawnugo<adj><cl_ka>:makka 
+ɗuudugo<adj><cl_ka>:ɗuuɗka
+famɗugo<adj><cl_nga>:pamara 
+mawnugo<adj><cl_nga>:mannga
+famɗugo<adj><cl_ngo>:famaro 
+mawnugo<adj><cl_ngo>:manngo 
+famɗugo<adj><cl_ngol>:pamerol 
+mawnugo<adj><cl_ngol>:manngol 
+ɗuudugo<adj><cl_ngol>:ɗuungol
+famɗugo<adj><cl_ndi>:pamardi 
+mawnugo<adj><cl_ndi>:mawndi 
+ɗuudugo<adj><cl_ndi>:ɗuundi
+famɗugo<adj><cl_ki>:pameri
+mawnugo<adj><cl_ki>:makki
+famɗugo<adj><cl_ngel>:pamarel
+mawnugo<adj><cl_ngel>:manngel
+famɗugo<adj><cl_koy>:pamaroy 
+mawnugo<adj><cl_koy>:makkoy
+ɗuudugo<adj><cl_koy>:ɗuuɗkoy
+famɗugo<adj><cl_ɗe>:pamarɗe
+mawnugo<adj><cl_ɗe>:mawɗe
+ɗuudugo<adj><cl_ɗe>:ɗuuɗɗe
+famɗugo<adj><cl_ɗi>:pamarɗi
+mawnugo<adj><cl_ɗi>:mawɗi
+ɗuudugo<adj><cl_ɗi>:ɗuuɗɗi
+famɗugo<adj><cl_o>:pamaro
+mawnugo<adj><cl_o>:mawɗo
+famɗugo<adj><cl_ɓe>:famarɓe
+mawnugo<adj><cl_ɓe>:mawɓe
+ɗuudugo<adj><cl_ɓe>:ɗuuɗɓe
+
+LEXICON Adverb
+aaʼa<adv>:aaʼa
+asee<adv>:asee
+ɗo<adv>:ɗo
+ɗon<adv>:ɗon
+fuh<adv>:fuh
+jam<adv>:jam
+jooni<adv>:jooni
+jonta<adv>:jonta
+naane<adv>:naane
+ndaa<adv>:ndaa
+ooho<adv>:ooho
+ton<adv>:ton
+too<adv>:too
+useni<adv>:useni
+
+LEXICON Preposition
+bee<pr>:bee
+dow<pr><loc>:dow
+haa<pr>:haa
+les<pr><loc>:les
+nder<pr>:nder
+yaasi<pr>:yaasi
+
+LEXICON CoordConj
+to<cnjcoo>:to
+
+LEXICON SubordConj
+haa<cnjsub>:haa
+ko<cnjsub>:ko
+ka<cnjsub><cl_ka>:ka
+ki<cnjsub><cl_ki>:ki
+ko<cnjsub><cl_ko>:ko
+nde<cnjsub><cl_nde>:nde
+ndi<cnjsub><cl_ndi>:ndi
+ndu<cnjsub><cl_ndu>:ndu
+nga<cnjsub><cl_nga>:nga
+ngal<cnjsub><cl_ngal>:ngal
+nge<cnjsub><cl_nge>:nge
+ngel<cnjsub><cl_ngel>:ngel
+ngo<cnjsub><cl_ngo>:ngo
+ngol<cnjsub><cl_ngol>:ngol
+ngu<cnjsub><cl_ngu>:ngu
+o<cnjsub><cl_o>:o
+ɓe<cnjsub><cl_ɓe>:ɓe
+ɗe<cnjsub><cl_ɗe>:ɗe
+ɗi<cnjsub><cl_ɗi>:ɗi
+koy<cnjsub><cl_koy>:koy
+
+LEXICON ConjAdverb
+kadi<cnjadv>:kadi
+le<cnjadv>:le
+nden<cnjadv>:nden
+
+LEXICON Numeral
+goʼo<num>:goʼo
+gootel<num>:gootel
+gootel<num><cl_ka>:ngoota
+gootel<num><cl_ki>:ngooti
+gootel<num><cl_nde>:woore
+gootel<num><cl_nge>:ngooti
+gootel<num><cl_ndu>:wooru
+gootel<num><cl_nga>:ngoota
+gootel<num><cl_ngal>:gootal
+gootel<num><cl_nge>:woote
+gootel<num><cl_ngel>:gootel
+gootel<num><cl_ngo>:wooto
+gootel<num><cl_ngol>:gootol
+gootel<num><cl_ngu>:ngootu
+gootel<num><cl_o>:gooto
+ɗiɗi<num>:ɗiɗi
+tati<num>:tati
+nayi<num>:nayi
+jowi<num>:jowi
+joweego<num>:joweego
+joweeɗiɗi<num>:joweeɗiɗi
+joweetati<num>:joweetati
+joweenayi<num>:joweenayi
+sappo<num>:sappo
+
+LEXICON Polarity
+naa<plr>:naa
+woodi<plr><aff>:woodi
+walaa<plr><neg>:walaa
+
+LEXICON FunctionWord
+boo
+naa<neg>:naa
+ɗon<loc>:ɗon
+ɗon<int>:ɗon
+ndikka<pol>:ndikka
+sey<pol>:sey
+
+LEXICON Interjection
+aʼa<ij>:aʼa
+aamiina<ij>:aamiina
+af<ij>:af
+maadalla<ij>:maadalla
+kay<ij>:kay
+sannu<ij>:sannu
+too<ij>too
+yawwa<ij>:yawwa
