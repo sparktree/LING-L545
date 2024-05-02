@@ -7,6 +7,8 @@ LIST ɗon = "ɗon" ;
 LIST dow = "dow" ;
 LIST les = "les" ;
 LIST feere = "feere" ;
+LIST haa = "haa" ;
+LIST yam = "yam" ;
 LIST Noun = (n sg) (n pl) ; # A set that matches either a Noun Singular or a Noun Plural
 
 
@@ -27,8 +29,20 @@ SELECT (obj) IF (0 (prn)) (-1/* (v fut o_sg1)) ;
 # choose continuous if previous word is ɗon
 IFF (pprs) IF (-1/* ɗon) (0C (pprs) OR (sub)) ;
 
+# choose stative if previous word is ɗon and preterite otherwise
+IFF (pprs) IF (-1/* ɗon) (0C (sta) OR (pret)) ;
+
 # choose aux for ɗon if next word is continuous or stative
 SELECT (vaux) IF (0 ɗon) (1 (pprs) OR (sta)) ;
+
+# choose locative for ɗon if before adverb
+SELECT (loc) IF (-1 (adv)) (0 ɗon) ;
+
+# choose locative for ɗon if before haa
+SELECT (loc) IF (0 ɗon) (1 haa)  ;
+
+# choose preposition for haa if after ɗon
+SELECT (pr) IF (-1 ɗon) (0 haa) ;
 
 # choose possessive pronoun if after dow or les
 SELECT (pos) IF (-1C dow OR les) (0 (prn)) ;
@@ -36,14 +50,28 @@ SELECT (pos) IF (-1C dow OR les) (0 (prn)) ;
 # choose cnjsub if after a noun with potential adjectives in between
 SELECT (cnjsub) IF (*-1 (n) BARRIER (*) - (adj)) ;
 
+# choose 1st person pronoun for yam if after imperative
+SELECT (prn) IF (-1 (imp)) (0 yam) ;
+
 # choose cnjsub if before a noun/pronoun
-SELECT (cnjsub) IF (1 (n) OR (prn)) ;
+SELECT (cnjsub) IF (NOT 0 (pr)) (1 (n) OR (prn)) ;
 
 # choose ko class for pronouns if previous noun is ko class
 SELECT (cl_ko) IF (*-1 (n) + (cl_ko) BARRIER (*) - (adj)) ;
 
-# choose adjective for feere is coming after a noun
+# choose pronoun between pronoun and cnjsub if before an adjective
+SELECT (prn) IF (0 (cnjsub)) (1 (adj))  ;
+
+# remove subordinating conjunction if at the end of a sentence
+REMOVE (cnjsub) IF (1 (sent)) ;
+
+# choose adjective for feere if coming after a noun
 SELECT (adj) IF (*-1 (n) BARRIER (*) - (adj)) (0 (feere)) ;
+
+# choose adjective if something that can be an adjective or a noun comes after a noun
+SELECT (adj) IF (-1 (n)) (0 (n)) ;
+
+
 
 
 

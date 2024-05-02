@@ -351,6 +351,7 @@ jangirde<n><sg><cl_nde>:jangirde
 jemma<n><sg><cl_nde>:jemma
 jokkere<n><sg><cl_nde>:jokkere
 joonde<n><sg><cl_nde>:joonde
+juulirde<n><sg><cl_nde>:jullirde
 kiikiɗe<n><sg><cl_nde>:kiikiɗe
 kobo<n><sg><cl_nde>:kobo
 koboore<n><sg><cl_nde>:koboore
@@ -588,6 +589,7 @@ jaawngal<n><pl><cl_ɗe>:jaawle
 jemma<n><pl><cl_ɗe>:jemmaare
 jigaawal<n><pl><cl_ɗe>:jigaaje
 jokkere<n><pl><cl_ɗe>:jokke
+jullirde<n><pl><cl_ɗe>:jullirɗe
 jungo<n><pl><cl_ɗe>:juuɗe
 kare<n><pl><cl_ɗe>:kare
 kiikiɗe<n><pl><cl_ɗe>:kiikiiɗeere
@@ -917,6 +919,7 @@ asee<adv>:asee
 ɗo<adv>:ɗo
 ɗon<adv>:ɗon
 fuh<adv>:fuh
+hande<adv>:hande
 jam<adv>:jam
 jooni<adv>:jooni
 jonta<adv>:jonta
@@ -933,9 +936,12 @@ dow<pr><loc>:dow
 haa<pr>:haa
 les<pr><loc>:les
 nder<pr>:nder
+sey<pr>:sey
 yaasi<pr>:yaasi
 
 LEXICON CoordConj
+e<cnjcoo>:e
+maa<cnjcoo>:maa
 to<cnjcoo>:to
 
 LEXICON SubordConj
@@ -986,6 +992,7 @@ tati<num>:tati
 nayi<num>:nayi
 jowi<num>:jowi
 joweego<num>:joweego
+joweego<num>:joweego'o
 joweeɗiɗi<num>:joweeɗiɗi
 joweetati<num>:joweetati
 joweenayi<num>:joweenayi
