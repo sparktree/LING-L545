@@ -1,8 +1,8 @@
-all: grn.gen.hfst
+all: esp.gen.hfst
 
-grn.lexc.hfst: grn.lexc
-		hfst-lexc grn.lexc -o grn.lexc.hfst
-grn.twol.hfst: grn.twol
-		hfst-twolc grn.twol -o grn.twol.hfst
-grn.gen.hfst: grn.lexc.hfst grn.twol.hfst
-		hfst-compose-intersect -1 grn.lexc.hfst -2 grn.twol.hfst -o grn.gen.hfst
+esp.lexc.hfst: esp.lexc
+		hfst-lexc esp.lexc -o esp.lexc.hfst
+esp.twol.hfst: esp.twol
+		hfst-twolc esp.twol -o esp.twol.hfst
+esp.gen.hfst: esp.lexc.hfst esp.twol.hfst
+		hfst-compose-intersect -1 esp.lexc.hfst -2 esp.twol.hfst -o esp.gen.hfst

@@ -1,0 +1,36 @@
+Multichar_Symbols
+
+%<sg%>      ! singular marker
+%<pl%>      ! plural marker
+%{s%}       ! plural
+
+LEXICON Root
+
+Nouns ;
+
+LEXICON N
+%<sg%>: # ;
+%<pl%>:%>%{s%} # ;
+
+LEXICON Nouns
+
+actriz N ;
+árbol N ;
+cantimplora N ;
+casa N ;
+corazón N ;
+desoxirribonucleico N ;
+electrodoméstico N ;
+electroencefalografista N ;
+espíritu N ;
+hipotálamo N ;
+interculturalidad N ;
+internacionalización N ;
+modongo N ;
+pantufla N ;
+persona N ;
+lápiz N ;
+ley N ;
+mamut N ;
+retroalimentación N ;
+taxi N ;
